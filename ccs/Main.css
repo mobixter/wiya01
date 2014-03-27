@@ -1,0 +1,69 @@
+﻿html, body {
+	
+}
+#nota			{background: #FFFFCC url(Image/warning.png) no-repeat; border: solid 1px #CCCCCC; font-style: italic; margin-bottom: 10px; margin-top: 10px; padding: 3px 3px 3px 44px; height: 42px; width: 700px}
+
+.LabelRequerido{
+	font-size: 9px;
+	color: red;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.texto {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+.textoSmall {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #666666;
+}
+.textoBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	font-weight: bold;
+}
+.EditFormHeader
+{
+	background-color: #ced9c1;
+	color: #475c2c;
+	height: 18px;
+}
+.exWrap{
+	width:100%;
+	border:1px solid #a2987e;
+}
+.exMessage{
+	position:absolute;
+	top:650px;
+	left:600px;
+	width:400px;
+	height:50px;
+	padding:13px 0 0 55px;
+	font:bold 12px/1 arial,sans-serif;
+	color:#fe0000;
+}
+.boton{
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border: 1px solid #000000;
+	background-color: #FFFFFF;
+}
+#botonExportar{
+	font: 12px Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	padding: 4px;
+	color: #2F4F4F;
+	vertical-align:middle;
+	margin-left: 312px; 
+	/*margin-left: 1170px\9; */
+	position: relative; 
+	top: 0px; 
+	width: 383px;
+    left: 0px;
+}
+.textoseleccionado{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FF0000;
+}

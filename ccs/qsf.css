@@ -1,0 +1,3838 @@
+﻿/*global*/
+
+html,
+body,
+.suites,
+.qsfLinks,
+.qsfLinks li
+{
+	margin:0;
+	padding:0;
+}
+
+a img
+{
+	border:0;
+}
+
+.qsfNone
+{
+	position:absolute;
+	top:-100%;
+	left:-3333px;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+.suites li,
+.radLogo,
+.head2,
+.qsfLinks a,
+.qsfSearch,
+.qsfSearchRight,
+div.qsfSearchOpened, 
+div.qsfSearchOpened:hover,
+.head3 .qsfNextNav .qsfNext,
+.head3 .qsfNextNav .qsfPrev,
+.qsfLeft .collapsed,
+.qsfLeft .expanded,
+.qsfLeft .expanded .collapsed,
+.qsfLeft .expanded .expanded,
+.qsfLeft .menuContainer .expanded li a:hover, 
+.qsfLeft .menuContainer .expanded .expanded li a:hover,
+.qsfLeft .menuContainer .tabSelected a,
+.titleRight .titleRightTopLeft,
+/*.titleRight .titleRightTopRight,*/
+.head2 .titleRightTopRight,
+.qsfLeft .controlMenuHeaderCell input,
+.qsfLeft .allProducts span,
+.qsfSourceCode a.qsfCodeSelectedCS, 
+.qsfSourceCode a.qsfCodeSelectedCS:hover,
+.qsfSourceCode a.qsfCodeSelectedVB,
+.qsfSourceCode a.qsfCodeSelectedVB:hover,
+.infoInner,
+.bigModuleBottom,
+.cfgButton,
+.qsfFooter .qsfFooterRounded h3,
+.qsfFooter .qsfFooterRounded h4,
+.qsfFooter .qsfFooterBottomLeft,
+.qsfFooter .qsfFooterBottomRight,
+ul.descriptionListings #instructions-section,
+.RadToolBar_FileSelection .selectedTab .rtbWrap .rtbOut,
+.radLogoHome,
+.radFeatures li,
+.getValue p,
+.getValue a,
+.highlightsTopBgr,
+.highlights h3,
+div.RadToolBar_FileSelection .rtbSplBtn .rtbChoiceArrow,
+.qsfBgHolderRightCont .qsfPurchaseOptions .dlTrial,
+.qsfBgHolderRightCont .qsfPurchaseOptions .buyNow
+{
+	background-image: url(qsfLayout11.png);
+	_background-image: url(qsfLayout11.gif);
+	background-repeat: no-repeat;
+}
+
+/*floats*/
+
+.qsfClear{display:inline-block}
+.qsfClear{display:block}
+.qsfClear:after{content:"";display:block;clear:both;height:0;visibility:hidden}
+.qsfClearFloat{display:block;clear:both;height:1px;overflow:hidden;margin-bottom:-1px}
+
+/*ajax*/
+
+.qsfLoading
+{
+	height:100%;
+	background:url(loading.gif) center center no-repeat;
+}
+
+/*suites*/
+
+.suites
+{
+	position: absolute;
+	top: 40px;
+	right: 0;
+	width: 525px;
+	list-style:none;
+}
+
+.suites li
+{
+	float:left;
+	padding: 0 8px 0 9px;
+	color:#000;
+	font-size: 11px;
+	background-position: -663px -100px;
+}
+
+.suites .qsfSuitesNoBorder
+{
+	background: none;
+	padding-left: 0;
+}
+
+.suites a
+{
+	display:block;
+	overflow:hidden;
+	color:#1e1e1e;
+	text-decoration: none;
+}
+
+.suites a:hover
+{
+	color:#418b04;
+	text-decoration: underline;
+}
+
+
+.suiteMVC a{width:126px;background-position:0 0}
+.suiteMVC a:hover{background-position:0 -100px}
+.suiteWF a{width:109px;background-position:0 -200px}
+.suiteWF a:hover{background-position:0 -300px}
+.suiteWPF a{width:103px;background-position:0 -400px}
+.suiteWPF a:hover{background-position:0 -500px}
+.suiteSL a{width:107px;background-position:0 -600px}
+.suiteSL a:hover{background-position:0 -700px}
+.suiteRep a{width:108px;background-position:0 -800px}
+.suiteRep a:hover{background-position:0 -900px}
+.suiteORM a{width:146px;background-position:0 -1000px}
+.suiteORM a:hover{background-position:0 -1100px}
+.suiteTS a{width:150px;background-position:0 -1200px}
+.suiteTS a:hover{background-position:0 -1300px}
+.suiteAll a{width:157px;background-position:0 -1400px}
+.suiteAll a:hover,.suiteAll a.allActive{background-position:0 -1500px}
+
+.qsfAllProds{display:none;width:552px;position:absolute;top:44px;margin-left:618px;overflow:hidden;z-index:10000;}
+* html .qsfAllProds{ margin-left:422px; }
+.qsfAllProdsDrop{position:absolute;top:0;left:0;width:100%;background:#1d1f23;border:1px solid #25262d;border-top:0}
+.qsfAllProds strong{padding-left:15px;font:10px arial,sans-serif;text-transform:uppercase;color:#fff}
+.qsfAllProds ul{padding:4px 0 25px;margin:0;}
+.qsfAllProds li{list-style:none;clear:both;line-height:22px;zoom:1;}
+.qsfAllProds li a{padding-left:15px;width:164px;display:block}
+/*.qsfAllProds li span{background:transparent url(sprite11.gif) no-repeat -900px 0;width:5px;height:5px;display:block;float:left;margin-top:9px;margin-right:7px;line-height:5px;font-size:4px}*/
+.qsfAllProds li span.silverlight{background-position:-900px -5px}
+.qsfAllProds li span.mvc{background-position:-900px -10px}
+.qsfAllProds li span.winforms{background-position:-900px -15px}
+.qsfAllProds li span.wpf{background-position:-900px -20px}
+.qsfAllProds li span.orm{background-position:-900px -25px}
+.qsfAllProds li span.reporting{background-position:-900px -30px}
+.qsfAllProds li span.tfs{background-position:-900px -35px}
+.qsfAllProds li span.webuites{background-position:-900px -40px}
+.qsfAllProds li span.sitefinity{background-position:-900px -45px}
+.qsfAllProds li span.phone{background-position:-900px -55px}
+.qsfAllProds li span.jc{background-position:-900px -50px}
+.qsfAllProds li span.jm{background-position:-900px -60px}
+.qsfAllProds a{color:#bbb;font-size:11px;text-decoration:none;float:left;padding-left:7px}
+.qsfAllProds a:hover{background:#000;color:#fff}
+.qsfAllProds strong a{float:none;padding:0;font-size:10px;color:#fff;text-decoration:none}
+.qsfAllProds strong a:hover{background:transparent;}
+.cmCol1,.cmCol2,.cmCol3{float:left;width:182px;margin:17px 0;padding:5px 0 0;height:226px}
+.qsfAllProds .cmCol1,.qsfAllProds .cmCol2{border-right:1px solid #3b3e43}
+.qsfAllProds .cmCol3{width:181px}
+.qsfAllProds .cmCol3 li a{width:166px}
+
+.qsfAllProds iframe
+{
+width:100%;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+border:0;
+opacity:0;
+-moz-opacity:0;
+filter:alpha(opacity=0);
+}
+
+/*layout*/
+
+html._Telerik_IE8 
+{
+	background: url(qsfBodyBack.png) repeat-x scroll left top #000;
+}
+
+.BODY
+{
+	background: url(qsfBodyBack.png) repeat-x scroll left top #000;
+	color:#001119;
+	font-size:62.5%;
+	line-height:1.2;
+	font-family:"segoe ui",arial,sans-serif;
+}
+
+*html .BODY
+{
+	text-align/**/: center;
+}
+
+form
+{
+	width:1160px;
+	margin:0 auto;
+}
+
+*html .BODY form
+{
+	text-align/**/: left;
+}
+
+.qsfCorporate
+{
+	position:absolute;
+	top:-1000px;
+	width:600px;
+}
+
+.qsfTable
+{
+	width:100%;
+	table-layout:fixed;
+	margin:5px 0 0;
+	font-size:1.2em;
+	
+}
+
+.qsfLeft,
+.qsfRight
+{
+	border:0;
+	padding:0;
+	vertical-align:top;
+}
+
+.qsfRight
+{
+	 background: url("qsfBigHolderHomeBgr.gif") repeat-x scroll 0 0 #000;
+}
+
+.qsfLeft
+{
+	width:220px;
+}
+
+.qsfDemosLeft
+{
+	background-color: #fff;
+	border: 1px solid transparent;
+}
+
+*html .qsfDemosLeft
+{
+	border: 0;
+}
+
+/*head1*/
+
+.head1
+{
+	position: relative;
+	height: 69px;
+}
+
+.radLogo,
+.telLogo
+{
+	color:#ccc;
+	text-indent:-3333px;
+	overflow:hidden;
+}
+
+.radLogo
+{
+	position: absolute;
+	display: block;
+	width: 202px;
+	height: 66px;
+	background-position: 16px 20px;
+}
+* html .radLogo { float: left; position: static; }
+
+.qsfQVersion
+{
+	position: absolute;
+	display: block;
+	top: 41px;
+	left: 193px;
+	font-size: 10px;
+	color: #1f1f1f;
+}
+
+.telLogo
+{
+	float:right;
+	width:91px;
+	height:22px;
+	margin:11px 10px 0 0;
+}
+
+/*head2*/
+
+.head2
+{
+	position: relative;
+	height: 42px;
+	background-position: 0 -48px;
+	margin:0;
+}
+
+/* IE6 z-index fix */
+*html .head2
+{
+	z-index: 30000;
+}
+
+/* IE7 z-index fix */
+*+html .head2
+{
+	z-index: 30000;
+}
+
+.qsfLinks
+{
+	position: absolute;
+	top: 6px;
+	right: 9px;
+	list-style: none;
+	font: bold 10px/26px arial,sans-serif;
+}
+
+.qsfLinks li
+{
+	float: left;
+}
+
+.qsfLinks a
+{
+	display: block;
+	float: left;
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.qsfLinks a:hover
+{
+	color: #b8f663;
+	text-decoration:none;
+}
+
+.qsfLinks .qsfDownloadTrial
+{
+	width: 116px;
+	background-position:-784px -93px;
+	margin-right: 3px;
+}
+
+.qsfLinks .qsfBuyItNow
+{
+	width: 73px;
+	background-position:-900px -93px;
+}
+
+/*search*/
+
+.qsfSearch
+{
+	float:left;
+	display:inline;
+	position:relative;
+	width:209px;
+	height:30px;
+	margin:0 0 0 2px;
+	padding: 8px 0 0 9px;
+	background-position: -2px -90px;
+}
+
+.qsfSearch:hover 
+{
+	background-position: -438px -90px;
+}
+
+.qsfSearchRight
+{
+	width: 5px;
+	height: 42px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-position: right -48px;
+}
+
+div.qsfSearchOpened, div.qsfSearchOpened:hover
+{
+	background-position: -220px -90px;
+}
+
+.qsfSearch label
+{
+	display:none;
+}
+
+div.RadComboBox_QsfSearch .rcbInputCell input.rcbInput
+{
+	width:170px;
+	height:18px;
+	border:0;
+	padding:4px 0 0 3px;
+	background:transparent;
+	font-size:11px;
+	font-style: italic;
+	color:#858585;
+}
+
+*|html div.RadComboBox_QsfSearch .rcbInputCell input.rcbInput
+{
+	padding-top: 0;
+}
+
+div.RadComboBox_QsfSearch .rcbInputCell input.rcbInput:focus
+{
+	font-style: normal !important;
+}
+
+.qsfSearch input.rcbEmptyMessage
+{
+	font-style:italic;
+}
+
+div.RadComboBox_QsfSearch .rcbArrowCell a
+{
+	width:26px;
+	height:22px;
+}
+
+.RadComboBoxDropDown_QsfSearch .col1, 
+.RadComboBoxDropDown_QsfSearch .col2
+{
+	display:inline-block;
+	padding-left: 5px;
+	zoom:1;
+}
+
+.RadComboBoxDropDown_QsfSearch .rcbHeader .col1,
+.RadComboBoxDropDown_QsfSearch .rcbHeader .col2
+{
+	padding-left:15px;
+}
+.RadComboBoxDropDown_QsfSearch .rcbHeader .col1
+{
+	width:80px;
+}
+
+.RadComboBoxDropDown_QsfSearch .rcbHeader .col1:hover,
+.RadComboBoxDropDown_QsfSearch .rcbHeader .col2:hover
+{
+	background: none;
+}
+
+.RadComboBoxDropDown_QsfSearch .rcbHeader .col1:hover,
+.RadComboBoxDropDown_QsfSearch .rcbHeader .col2:hover
+{
+	background: #000;
+}
+
+.RadComboBoxDropDown_QsfSearch .col1
+{
+	width:90px;
+}
+
+.RadComboBoxDropDown_QsfSearch .col2
+{
+	width:290px;
+}
+
+.RadComboBoxDropDown_QsfSearch ul
+{
+	list-style:none;
+	margin:0;
+	padding:0;	
+	
+}
+div.RadComboBoxDropDown_QsfSearch
+{
+	position:absolute;
+	background-color:#0a0d0c;
+	color:#fff;
+	font:12px 'segoe ui',arial,sans-serif;
+}
+
+.RadComboBoxDropDown_QsfSearch .rcbScroll
+{
+	overflow:auto;
+	position:relative;
+	border-top: 1px solid #2d2d2d;
+	border-bottom: 1px solid #2d2d2d;
+}
+
+.RadComboBoxDropDown_QsfSearch .rcbWidth
+{
+	width: 430px !important;
+	margin: 0 auto;
+}
+
+div.RadComboBoxDropDown_QsfSearch .rcbHeader,
+div.RadComboBoxDropDown_QsfSearch .rcbMoreResults
+{
+	padding: 0;
+	border:0;
+}
+
+.RadComboBoxDropDown_QsfSearch .rcbHeader
+{
+	background-color: #0a0d0c;
+	line-height:24px;
+	width:100%;
+	color: #939292;
+}
+
+.RadComboBoxDropDown_QsfSearch .rcbMoreResults
+{
+	background-color:#0a0d0c;
+	line-height:24px;
+	width:100%;
+}
+
+.RadComboBoxDropDown_QsfSearch .rcbMoreResults span
+{
+	padding:0 10px;
+	zoom:1;
+}
+
+.RadComboBoxDropDown_QsfSearch .rcbMoreResults a
+{
+	float:left;
+	text-indent:-9999px;
+}
+
+.RadComboBoxDropDown_QsfSearch li.rcbItem, .RadComboBoxDropDown_QsfSearch li.rcbHovered, .RadComboBoxDropDown_QsfSearch li.rcbDisabled, .RadComboBoxDropDown_QsfSearch li.rcbLoading
+{
+	padding: 2px 0;
+}
+
+.RadComboBoxDropDown_QsfSearch li.rcbHovered
+{
+	background:#2c302d;
+	border-bottom: 1px solid #373b38;
+}
+
+.RadComboBoxDropDown_QsfSearch .rcbItem,
+.RadComboBoxDropDown_QsfSearch .rcbHovered
+{
+	height: 22px;
+	line-height: 22px;
+	margin:0;
+	padding:0;
+	cursor:pointer;
+	zoom:1;
+	border-bottom: 1px solid transparent;
+}
+.RadComboBox_QsfSearch .rcbSlide
+{
+	position:absolute;
+	float:left;
+	margin: 8px 0 0 -10px;
+}
+
+.RadComboBoxDropDown_QsfSearch
+{
+	border:1px solid;
+	border-color:#0a0d0c;
+}
+
+/* QsfMenu */
+
+.RadMenu_QsfMenu a.rmLink,
+.RadMenu_QsfMenu a.rmTLink,
+.RadMenu_QsfMenu span.rmText,
+.RadMenu_QsfMenu .rmLeftArrow,
+.RadMenu_QsfMenu .rmRightArrow,
+.RadMenu_QsfMenu .rmTopArrow,
+.RadMenu_QsfMenu .rmBottomArrow,
+.RadMenu_QsfMenu .rmGroup a.rmTemplateLink,
+.RadMenu_QsfMenu .rmGroup .rmTemplateSpan
+{
+	background-image: url('Menu/rmSprite.png');
+	background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.RadMenu_QsfMenu .rmRootGroup
+{
+	background-repeat: repeat-x;
+}
+
+.RadMenu_QsfMenu ul.rmRootGroup .rmText
+{
+    padding-bottom: 0;
+}
+
+.RadMenu_QsfMenu .rmVertical
+{
+	background-position: 0 -408px;
+}
+
+.RadMenu_QsfMenu .rmTemplate img
+{
+	width: 140px;
+	height: 80px;
+    float: left;
+    border: 0;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+.RadMenu_QsfMenu .rmGroup .rmTemplate .h5
+{
+    display: block;
+	font-size: 14px;
+    font-weight: normal;
+    margin: 5px 0;
+    padding-top: 5px;
+    *padding-top: 0;
+}
+
+.RadMenu_QsfMenu .rmGroup div.rmText
+{
+    padding: 0 10px;
+    line-height: 16px;
+    font-size: 10px;
+    margin: 0;
+    background-position: 100% -110px;
+}
+
+.RadMenu_QsfMenu .rmGroup a.rmTemplateLink
+{
+    padding-left: 5px;
+    display: block;
+    cursor: pointer;
+    background-position: 0 -500px;
+}
+
+.RadMenu_QsfMenu .rmGroup .rmText span.rmTemplateSpan
+{
+    display: block;
+    font-size: 10px;
+    margin-right: -5px;
+    height: 80px;
+    background-position: 0 -500px;
+}
+
+.RadMenu_QsfMenu .rmGroup a.rmTemplateLink:hover
+{
+    background-position: 0 -110px;
+}
+
+.RadMenu_QsfMenu .rmGroup a.rmTemplateLink:hover .rmTemplateSpan
+{
+    background-position: 100% -110px;
+}
+
+.RadMenu_QsfMenu .rmGroup span.rmText
+{
+    padding: 0 20px 0 10px;
+    margin-right: -5px;
+    zoom: 1;
+}
+
+.RadMenu_QsfMenu .rmSlide .rmGroup li.rmTemplate
+{
+    padding: 5px 0;
+}
+
+.RadMenu_QsfMenu .rmGroup li.rmLast.rmTemplate
+{
+    padding-bottom: 10px;
+}
+
+.RadMenu_QsfMenu a.rmTemplateLink
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+.RadMenu_QsfMenu .rmTemplateItem,
+.RadMenu_QsfMenu .rmTemplate ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.RadMenu_QsfMenu li.rmTemplate h3,
+.RadMenu_QsfMenu li.rmTemplate h4,
+.RadMenu_QsfMenu .rmGroup div.rmText .rmText
+{
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 11px;
+}
+
+.RadMenu_QsfMenu li.rmTemplate h3,
+.RadMenu_QsfMenu li.rmTemplate h4
+{
+    color: #7b7b7b;
+    margin: 5px 0;
+    font-weight: normal;
+    border-bottom: 0;
+}
+
+.RadMenu_QsfMenu li.rmTemplate h3
+{
+    color: #aaa;
+    font-size: 15px;
+}
+
+.RadMenu_QsfMenu .rmGroup .rmTemplateItem .rmHint
+{
+    font-size: 9px;
+    font-style: italic;
+    color: #7b7b7b;
+}
+
+.RadMenu_QsfMenu
+{
+	z-index:auto !important;
+}
+
+/* <Root items> */
+
+.qsfMenu
+{
+    display: inline-block;
+    padding-left: 1px;
+    zoom: 1;
+}
+
+.RadMenu_QsfMenu,
+.RadMenu_QsfMenu a.rmLink,
+.RadMenu_QsfMenu a.rmTLink
+{
+	font: normal 13px/23px "Segoe UI", Arial, sans-serif;
+	color: #fff;
+	text-decoration: none;
+}
+
+.RadMenu_QsfMenu .rmGroup .rmText
+{
+	font-size: 11px;
+    cursor: pointer;
+}
+
+.RadMenu_QsfMenu .rmRootLink .rmText
+{
+    line-height: 38px;
+}
+
+.RadMenu_QsfMenu .rmRootGroup .rmText span
+{
+    padding-left: 5px;
+    font-size: 5px;
+    vertical-align: top;
+    *vertical-align: middle;
+    display: inline-block;
+    zoom: 1;
+}
+
+.rateMenu .rmRootGroup .rmText .RadRating span
+{
+	display: block;
+}
+
+.RadMenu_QsfMenu .rmGroup .rmText span
+{
+    padding-left: 0;
+    font-family: Arial, sans-serif;
+    font-size: 7px;
+}
+
+.RadMenu_QsfMenu .rmGroup .rmTemplate span
+{
+    font-size: 5pt;
+    padding-left: 2px;
+}
+
+.RadMenu_QsfMenu .rmGroup .rmTemplate .RadRating span
+{
+	padding:0px;
+}
+
+.RadMenu_QsfMenu a.rmLink,
+.RadMenu_QsfMenu a.rmTLink,
+.RadMenu_QsfMenu .rmText
+{
+	background-repeat: no-repeat;
+	background-position: 0 500px;
+}
+
+.RadMenu_QsfMenu a.rmLink,
+.RadMenu_QsfMenu a.rmTLink
+{
+    display: block;
+	background-position: 100% 0;
+}
+
+.RadMenu_QsfMenu a.rmLink:hover,
+.RadMenu_QsfMenu a.rmTLink:hover,
+.RadMenu_QsfMenu a.rmFocused,
+.RadMenu_QsfMenu a.rmSelected,
+.RadMenu_QsfMenu a.rmExpanded,
+.RadMenu_QsfMenu a.rmExpanded:hover
+{
+	background-position: 100% -40px;
+}
+
+.RadMenu_QsfMenu .rmLast a.rmExpanded .rmText
+{
+	background-position: 0 500px;
+	background-repeat: no-repeat;
+}
+
+.RadMenu_QsfMenu a.rmDisabled,
+.RadMenu_QsfMenu a.rmDisabled:hover
+{
+	color: #7d7d7d;
+	background-position: 100% 0;
+}
+
+.RadMenu_QsfMenu .rmItem
+{
+	z-index:auto !important;
+}
+
+/* </Root items> */
+
+
+/* <Submenu items> */
+
+.RadMenu_QsfMenu .rmGroup,
+.RadMenu_QsfMenu .rmTopFix,
+.RadMenu_QsfMenu .rmBottomFix,
+.RadMenu_QsfMenu .rmMultiColumn,
+.RadMenu_QsfMenu .rmGroup .rmVertical,
+.RadMenu_QsfMenu .rmRoundedCorners .rmGroup .rmItem,
+.RadMenu_QsfMenu .rmRoundedCorners li.rmFirstGroupColumn .rmItem,
+.RadMenu_QsfMenu .rmRoundedCorners .rmFirstGroupColumn li.rmFirstGroupColumn .rmItem,
+.RadMenu_QsfMenu .rmRoundedCorners ul.rmHorizontal .rmFirst,
+.RadMenu_QsfMenu_Context.rmRoundedCorners .rmGroup .rmItem,
+.RadMenu_QsfMenu_Context.rmRoundedCorners ul.rmHorizontal .rmFirst
+{
+	background: #0a0d0c;
+}
+
+.RadMenu_QsfMenu .rmRoundedCorners .rmScrollWrapContainer .rmGroup,
+.RadMenu_QsfMenu .rmRoundedCorners .rmScrollWrap .rmItem,
+.RadMenu_QsfMenu .rmRoundedCorners .rmGroupColumn .rmItem,
+.RadMenu_QsfMenu .rmRoundedCorners .rmGroupColumn .rmGroupColumn .rmItem,
+.RadMenu_QsfMenu .rmRoundedCorners .rmHorizontal .rmItem,
+.RadMenu_QsfMenu .rmRoundedCorners .rmScrollWrap .rmVertical,
+.RadMenu_QsfMenu_Context.rmRoundedCorners .rmScrollWrapContainer .rmGroup,
+.RadMenu_QsfMenu_Context.rmRoundedCorners .rmScrollWrap .rmItem,
+.RadMenu_QsfMenu_Context.rmRoundedCorners .rmHorizontal .rmItem,
+.RadMenu_QsfMenu_Context.rmRoundedCorners .rmScrollWrap .rmVertical
+{
+	background-image: none;
+}
+
+* html .rmRoundedCorners_QsfMenu .rmScrollWrapContainer .rmGroup,
+* html .rmRoundedCorners_QsfMenu .rmScrollWrap .rmItem,
+* html .rmRoundedCorners_QsfMenu .rmHorizontal .rmItem,
+* html .rmRoundedCorners_QsfMenu .rmScrollWrap .rmVertical
+{
+	background-image: none;
+}
+
+.RadMenu_QsfMenu .rmRoundedCorners .rmGroupColumn
+{
+	background-color: #0a0d0c;
+}
+
+.RadMenu_QsfMenu .rmBottomLeft,
+.RadMenu_QsfMenu .rmRoundedCorners .rmScrollWrapContainer,
+.RadMenu_QsfMenu_Context.rmRoundedCorners .rmScrollWrapContainer,
+.RadMenu_QsfMenu_Context.rmRoundedCorners ul.rmGroup,
+.RadMenu_QsfMenu .rmRoundedCorners ul.rmGroup,
+.RadMenu_QsfMenu .rmRoundedCorners .rmMultiColumn
+{
+	background-image:  url('Menu/rmRoundedLeft.png');
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+
+* html .rmRoundedCorners_QsfMenu .rmScrollWrapContainer,
+* html .rmRoundedCorners_QsfMenu .rmGroup ul.rmGroup,
+* html .rmRoundedCorners_QsfMenu ul.rmGroup
+{
+	background-image:  url('Menu/rmRoundedLeft.png');
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+
+.RadMenu_QsfMenu .rmTopRight,
+.RadMenu_QsfMenu .rmBottomRight
+{
+	background-image:  url('Menu/rmRoundedRight.png');
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+
+.RadMenu_QsfMenu .rmTopFix,
+.RadMenu_QsfMenu .rmBottomFix,
+.RadMenu_QsfMenu .rmRoundedCorners .rmGroup .rmFirst,
+.RadMenu_QsfMenu_Context.rmRoundedCorners .rmGroup .rmFirst,
+.rmRoundedCorners_QsfMenu .rmGroup .rmFirst
+{
+	border-color: #080808;
+}
+
+.RadMenu_QsfMenu .rmRoundedCorners .rmScrollWrapContainer .rmTopFix,
+.RadMenu_QsfMenu .rmRoundedCorners .rmScrollWrapContainer .rmBottomFix,
+.RadMenu_QsfMenu_Context.rmRoundedCorners .rmScrollWrapContainer .rmTopFix,
+.RadMenu_QsfMenu_Context.rmRoundedCorners .rmScrollWrapContainer .rmBottomFix
+{
+	background: #0a0d0c;
+}
+
+* html .rmRoundedCorners_QsfMenu .rmScrollWrapContainer .rmTopFix,
+* html .rmRoundedCorners_QsfMenu .rmScrollWrapContainer .rmBottomFix
+{
+	background: #0a0d0c;
+}
+
+.RadMenu_QsfMenu .rmRoundedCorners .rmScrollWrapContainer .rmTopArrow,
+.RadMenu_QsfMenu .rmRoundedCorners .rmScrollWrapContainer .rmBottomArrow,
+.RadMenu_QsfMenu .rmRoundedCorners .rmScrollWrapContainer .rmLeftArrow,
+.RadMenu_QsfMenu .rmRoundedCorners .rmScrollWrapContainer .rmRightArrow,
+.RadMenu_QsfMenu_Context.rmRoundedCorners .rmScrollWrapContainer .rmTopArrow,
+.RadMenu_QsfMenu_Context.rmRoundedCorners .rmScrollWrapContainer .rmBottomArrow,
+.RadMenu_QsfMenu_Context.rmRoundedCorners .rmScrollWrapContainer .rmLeftArrow,
+.RadMenu_QsfMenu_Context.rmRoundedCorners .rmScrollWrapContainer .rmRightArrow
+{
+	background-color: #0a0d0c;
+	border: 0;
+}
+
+* html .rmRoundedCorners_QsfMenu .rmScrollWrapContainer .rmTopArrow,
+* html .rmRoundedCorners_QsfMenu .rmScrollWrapContainer .rmBottomArrow,
+* html .rmRoundedCorners_QsfMenu .rmScrollWrapContainer .rmLeftArrow,
+* html .rmRoundedCorners_QsfMenu .rmScrollWrapContainer .rmRightArrow
+{
+	background-color: #0a0d0c;
+	border: 0;
+}
+
+.RadMenu_QsfMenu_rtl .rmBottomLeft,
+.RadMenu_QsfMenu_rtl .rmRoundedCorners ul.rmGroup,
+.RadMenu_QsfMenu_rtl .rmRoundedCorners .rmMultiColumn,
+.RadMenu_QsfMenu .rmRoundedCorners .rmScrollWrapContainer,
+.RadMenu_QsfMenu .rmScrollWrapContainer .rmBottomLeft,
+.rmRoundedCorners.RadMenu_QsfMenu_Context_rtl ul.rmGroup,
+.RadMenu_QsfMenu_Context.rmRoundedCorners .rmScrollWrapContainer
+{
+	background-image: url('Menu/rmRoundedLeft_rtl.png');
+}
+
+.RadMenu_QsfMenu_rtl .rmTopRight,
+.RadMenu_QsfMenu_rtl .rmBottomRight
+{
+	background-image: url('Menu/rmRoundedRight_rtl.png');
+}
+
+.RadMenu_QsfMenu_rtl li.rmTopFix,
+.RadMenu_QsfMenu_rtl li.rmBottomFix,
+.RadMenu_QsfMenu_rtl .rmRoundedCorners .rmGroup .rmItem,
+.rmRoundedCorners.RadMenu_QsfMenu_Context_rtl .rmGroup .rmItem
+{
+	background-position: 101% 0;
+}
+
+.RadMenu_QsfMenu ul.rmShadows .rmTopShadowRight
+{
+    background-position: 100% -15px;
+}
+
+.RadMenu_QsfMenu .rmSlide .rmScrollWrap
+{
+	background-image: none;
+}
+
+.RadMenu_QsfMenu_rtl .rmGroup,
+.RadMenu_QsfMenu_rtl .rmMultiColumn,
+.RadMenu_QsfMenu_rtl .rmGroup .rmVertical
+{
+	background-position: 100% 0;
+}
+
+.RadMenu_QsfMenu ul.rmRoundedCorners ul.rmGroup
+{
+    margin-top: 0;
+}
+
+.RadMenu_QsfMenu .rmRootGroup li.rmItem .rmGroup
+{
+	padding-bottom: 0;
+}
+
+.RadMenu_QsfMenu .rmGroup li.rmItem
+{
+    padding-right: 5px;
+}
+
+.RadMenu_QsfMenu .rmGroup li.rmLast
+{
+	padding-bottom: 1px;
+}
+
+.RadMenu_QsfMenu .rmRootGroup .rmHorizontal
+{
+	background-image: none;
+}
+
+.RadMenu_QsfMenu .rmScrollWrap .rmVertical
+{
+	border: 0;
+}
+
+.RadMenu_QsfMenu .rmRoundedCorners .rmScrollWrapContainer li.rmItem,
+.RadMenu_QsfMenu_Context.rmRoundedCorners .rmScrollWrapContainer li.rmItem,
+.rmRoundedCorners_QsfMenu .rmScrollWrapContainer li.rmItem
+{
+	background: none;
+}
+
+.RadMenu_QsfMenu .rmGroup .rmItem a.rmLink,
+.RadMenu_QsfMenu .rmGroup .rmItem a.rmTLink,
+.RadMenu_QsfMenu .rmGroup .rmItem a.rmLink:hover,
+.RadMenu_QsfMenu .rmGroup .rmItem a.rmTLink:hover,
+.RadMenu_QsfMenu .rmGroup .rmItem a.rmFocused,
+.RadMenu_QsfMenu .rmGroup .rmItem a.rmSelected,
+.RadMenu_QsfMenu .rmGroup .rmItem a.rmExpanded
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	border: 0;
+}
+
+.RadMenu_QsfMenu .rmGroup a.rmLink,
+.RadMenu_QsfMenu .rmGroup a.rmTLink,
+.RadMenu_QsfMenu .rmGroup .rmText,
+.RadMenu_QsfMenu .rmGroup .rmItem a.rmDisabled,
+.RadMenu_QsfMenu .rmGroup .rmItem a.rmDisabled:hover,
+.RadMenu_QsfMenu .rmGroup .rmItem a.rmDisabled .rmText,
+.RadMenu_QsfMenu .rmGroup .rmItem a.rmDisabled:hover .rmText
+{
+	background-position: 0 500px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.RadMenu_QsfMenu .rmGroup a.rmLink:hover,
+.RadMenu_QsfMenu .rmGroup a.rmTLink:hover,
+.RadMenu_QsfMenu .rmGroup a.rmFocused,
+.RadMenu_QsfMenu .rmGroup a.rmSelected,
+.RadMenu_QsfMenu .rmGroup a.rmExpanded
+{
+	background-position: 0 -80px;
+}
+
+.RadMenu_QsfMenu .rmGroup a.rmLink:hover .rmText,
+.RadMenu_QsfMenu .rmGroup a.rmTLink:hover .rmText,
+.RadMenu_QsfMenu .rmGroup a.rmFocused .rmText,
+.RadMenu_QsfMenu .rmGroup a.rmSelected .rmText,
+.RadMenu_QsfMenu .rmGroup a.rmExpanded .rmText
+{
+	background-position: 100% -80px;
+}
+
+/* <expand arrows> */
+
+.RadMenu_QsfMenu .rmVertical .rmExpandRight,
+.RadMenu_QsfMenu .rmGroup .rmExpandDown,
+.RadMenu_QsfMenu_Context .rmGroup .rmExpandRight,
+.RadMenu_QsfMenu .rmVertical .rmItem a.rmDisabled .rmExpandRight,
+.RadMenu_QsfMenu .rmGroup .rmItem a.rmDisabled .rmExpandDown,
+.RadMenu_QsfMenu .rmVertical .rmItem a.rmDisabled:hover .rmExpandRight,
+.RadMenu_QsfMenu .rmGroup .rmItem a.rmDisabled:hover .rmExpandDown
+{
+	background-position: 100% -216px;
+}
+
+.RadMenu_QsfMenu .rmVertical a.rmLink:hover .rmExpandRight,
+.RadMenu_QsfMenu .rmVertical a.rmFocused .rmExpandRight,
+.RadMenu_QsfMenu .rmVertical a.rmSelected .rmExpandRight,
+.RadMenu_QsfMenu .rmVertical a.rmExpanded .rmExpandRight
+{
+	background-position: 100% -312px;
+}
+
+.RadMenu_QsfMenu .rmGroup a.rmLink:hover .rmExpandRight,
+.RadMenu_QsfMenu .rmGroup a.rmFocused .rmExpandRight,
+.RadMenu_QsfMenu .rmGroup a.rmSelected .rmExpandRight,
+.RadMenu_QsfMenu .rmGroup a.rmExpanded .rmExpandRight,
+.RadMenu_QsfMenu .rmGroup a.rmLink:hover .rmExpandDown,
+.RadMenu_QsfMenu .rmGroup a.rmFocused .rmExpandDown,
+.RadMenu_QsfMenu .rmGroup a.rmSelected .rmExpandDown,
+.RadMenu_QsfMenu .rmGroup a.rmExpanded .rmExpandDown
+{
+	background-position: 100% -240px;
+}
+
+.RadMenu_QsfMenu .rmVertical a.rmDisabled:hover .rmExpandRight,
+.RadMenu_QsfMenu .rmGroup a.rmDisabled:hover .rmExpandDown
+{
+	background-image: url('Menu/rmSprite.png');
+	background-position: 100% -216px;
+}
+
+/* </expand arrows> */
+
+/* <rtl> */
+
+.RadMenu_QsfMenu_rtl .rmVertical a.rmExpanded .rmText,
+.RadMenu_QsfMenu_rtl .rmVertical a.rmExpanded:hover .rmText
+{
+	background-position: 0 500px;
+	background-repeat: no-repeat;
+}
+
+.RadMenu_QsfMenu_rtl .rmGroup a.rmLink:hover,
+.RadMenu_QsfMenu_rtl .rmGroup a.rmFocused,
+.RadMenu_QsfMenu_rtl .rmGroup a.rmSelected,
+.RadMenu_QsfMenu_rtl .rmGroup a.rmExpanded
+{
+	background-position: 100% -264px;
+}
+
+.RadMenu_QsfMenu_rtl .rmGroup a.rmLink:hover .rmText,
+.RadMenu_QsfMenu_rtl .rmGroup a.rmFocused .rmText,
+.RadMenu_QsfMenu_rtl .rmGroup a.rmSelected .rmText,
+.RadMenu_QsfMenu_rtl .rmGroup a.rmExpanded .rmText
+{
+	background-position: 0 -288px;
+}
+
+.RadMenu_QsfMenu_Context_rtl .rmVertical .rmExpandLeft,
+.RadMenu_QsfMenu_rtl .rmRootGroup .rmExpandLeft
+{
+	background-position: 0 -312px;
+}
+
+.RadMenu_QsfMenu_rtl .rmVertical a.rmLink:hover .rmExpandLeft,
+.RadMenu_QsfMenu_rtl .rmVertical a.rmFocused .rmExpandLeft,
+.RadMenu_QsfMenu_rtl .rmVertical a.rmSelected .rmExpandLeft,
+.RadMenu_QsfMenu_rtl .rmVertical a.rmExpanded .rmExpandLeft
+{
+	background-position: 0 -216px;
+}
+
+.RadMenu_QsfMenu_rtl .rmGroup a.rmLink:hover .rmExpandLeft,
+.RadMenu_QsfMenu_rtl .rmGroup a.rmFocused .rmExpandLeft,
+.RadMenu_QsfMenu_rtl .rmGroup a.rmSelected .rmExpandLeft,
+.RadMenu_QsfMenu_rtl .rmGroup a.rmExpanded .rmExpandLeft
+{
+	background-position: 0 -336px;
+}
+
+.RadMenu_QsfMenu_rtl .rmRootGroup a.rmDisabled:hover .rmExpandLeft
+{
+	background-position: 0 -312px;
+}
+
+
+/* </rtl> */
+
+/* </Submenu items> */
+
+/* <Submenu offsets (QsfMenu - specific, overlapping submenus)> */
+
+.RadMenu_QsfMenu .rmSlide
+{
+	margin: 0 0 0 -1px;
+	z-index:30000 !important; /* Fixes z-indeces in all browsers, but IE6 and IE7 */
+}
+
+.RadMenu_QsfMenu .rmVertical .rmSlide,
+.RadMenu_QsfMenu .rmSlide .rmSlide,
+.RadMenu_QsfMenu_Context .rmGroup .rmSlide
+{
+	margin: 0 0 0 -5px;
+}
+
+.RadMenu_QsfMenu_rtl .rmSlide
+{
+	margin: 0 0 0 0;
+}
+
+.RadMenu_QsfMenu_rtl .rmFirst .rmSlide
+{
+	margin-left: 1px;
+}
+
+.RadMenu_QsfMenu_rtl .rmVertical .rmSlide,
+.RadMenu_QsfMenu_rtl .rmSlide .rmSlide,
+.RadMenu_QsfMenu_Context_rtl .rmGroup .rmSlide
+{
+	margin: 0 0 0 5px;
+}
+
+/* </Submenu offsets> */
+
+/* <Scrolling arrows> */
+
+.RadMenu_QsfMenu .rmLeftArrow,
+.RadMenu_QsfMenu .rmRightArrow
+{
+	background-color: #4f4f4f;
+}
+
+.RadMenu_QsfMenu .rmLeftArrow { background-position: -8px -312px; border-right: 1px solid #828282; }
+.RadMenu_QsfMenu .rmRightArrow { background-position: -482px -216px; border-left: 1px solid #828282; }
+
+.RadMenu_QsfMenu .rmTopArrow,
+.RadMenu_QsfMenu .rmBottomArrow,
+.RadMenu_QsfMenu .rmGroup .rmLeftArrow,
+.RadMenu_QsfMenu .rmGroup .rmRightArrow
+{
+	background-color: #0a0d0c;
+}
+
+.RadMenu_QsfMenu .rmTopArrow { background-position: 50% -367px; border-bottom: 1px solid #828282; }
+.RadMenu_QsfMenu .rmBottomArrow { background-position: 50% -391px; border-top: 1px solid #828282; }
+
+/* </Scrolling arrows> */
+
+/* <Separators> */
+
+.RadMenu_QsfMenu .rmHorizontal .rmSeparator .rmText,
+.RadMenu_QsfMenu .rmVertical .rmHorizontal .rmSeparator .rmText
+{
+	height: 22px;
+	margin: 1px 0 0;
+	width: 1px;
+	background-color: #000;
+}
+
+.RadMenu_QsfMenu_Context .rmSeparator .rmText,
+.RadMenu_QsfMenu .rmHorizontal .rmGroup .rmSeparator .rmText,
+.RadMenu_QsfMenu .rmVertical .rmHorizontal .rmGroup .rmSeparator .rmText
+{
+	background-color: transparent;
+	background-position: 0 -406px;
+}
+
+/* </Separators> */
+
+/* </RadMenu / QsfMenu> */
+
+/*Head3*/
+
+.head3
+{
+	height: 32px;
+	line-height: 32px;
+}
+
+.head3 .qsfNextNav
+{
+	margin: 0;
+	padding: 12px 17px 0 0;
+	height: 12px;
+	line-height: 12px;
+	float: right;
+	list-style: none;
+	text-transform: uppercase;
+}
+
+.head3 .qsfNextNav li
+{
+	display: inline-block;
+	zoom: 1; /* IE hack to trigger hasLayout */
+	*display: inline; /* IE hack to achieve inline-block behavior */
+	padding: 0 7px 0 0;
+}
+
+.head3 .qsfNextNav li.nextNavSep
+{
+	border-left: 1px solid #8fab9d;
+	padding: 0 0 0 7px;
+}
+
+.head3 .qsfNextNav a
+{
+	color: #fff;
+	text-decoration: none;
+	font-size: 11px;
+}
+
+.head3 .qsfNextNav a:hover
+{
+	color: #cfdbd5;
+}
+
+.head3 .qsfNextNav .qsfNext
+{
+	background-position: -410px -590px;
+	padding-right: 10px;
+}
+.head3 .qsfNextNav .qsfPrev
+{
+	background-position: -440px -573px;
+	padding-left: 10px;
+}
+
+.head3 .qsfNextNav .qsfNext:hover
+{
+	background-position: -500px -590px;
+}
+.head3 .qsfNextNav .qsfPrev:hover
+{
+	background-position: -530px -573px;
+}
+
+/*left*/
+
+.qsfLeft i,
+td.leftCellTop,
+td.rightCellTop,
+td.leftCellMiddle,
+td.rightCellMiddle,
+td.leftCellBottom,
+td.middleCellBottom,
+td.rightCellBottom,
+.qsfLeft .collapsed ul
+{
+	display:none;
+}
+
+.qsfLeft,
+.qsfLeft a
+{
+	color:#fff;
+}
+
+.qsfLeft table
+{
+	width:200px;
+}
+
+.qsfLeft .navigationNodes
+{
+	margin-top:-11px;
+}
+
+/* Non IE margin-top fix */
+*|html .qsfLeft .navigationNodes
+{
+	margin-top:-10px;
+}
+
+/* IE6 cut fix */
+*html .qsfLeft .navigationNodes
+{
+	margin-top:-9px;
+	zoom:1;
+	position:relative;
+}
+
+/* IE7 cut fix */
+*+html .qsfLeft .navigationNodes
+{
+	margin-top:-9px;
+	zoom:1;
+	position:relative;
+}
+
+/* home page form decorator*/
+.qsfFreeHome .controlMenu
+{
+	display:block !important;
+}
+
+/*control demos navigation*/
+
+.qsfLeft .controlMenu
+{
+	margin:0 0 23px;
+}
+
+.qsfHome .controlMenu,
+.qsfHome .allProductsHeader
+{
+	display:none;
+}
+
+.qsfLeft .allProducts td
+{
+	padding:0 0 0 8px;
+}
+
+.qsfLeft .controlMenu td
+{
+	padding:0 0 0 12px;
+}
+
+.qsfLeft .controlMenuHeaderCell
+{
+	font-size:19px;
+}
+
+.qsfLeft .controlMenuHeaderCell input
+{
+	width:24px;
+	height:24px;
+	border:0;
+	margin:0 7px 0 0;
+	padding:0;
+	background-color:transparent;
+	background-repeat:no-repeat;
+	outline:none;
+}
+
+.ImgAjax{background-position:0 -200px;}
+.ImgAsyncUpload{background-position: -30px -200px;}
+.ImgBinaryImage{background-position: -60px -200px;}
+.ImgButton{background-position: -90px -200px;}
+.ImgCalendar{background-position: -120px -200px;}
+.ImgCaptcha{background-position: -150px -200px;}
+.ImgChart{background-position: -180px -200px;}
+.ImgColorPicker{background-position: -210px -200px;}
+.ImgComboBox{background-position: -240px -200px;}
+.ImgDataPager{background-position: -270px -200px;}
+.ImgOverview{background-position: 0 0;}
+.ImgDock{background-position: -300px -200px;}
+.ImgEditor{background-position: -330px -200px;}
+.ImgFileExplorer{background-position: -360px -200px;}
+.ImgFilter{background-position: -390px -200px;}
+.ImgFormDecorator{background-position: -420px -200px;}
+.ImgGrid{background-position: -450px -200px;}
+.ImgInput{background-position: -480px -200px;}
+.ImgListBox{background-position: -510px -200px;}
+.ImgListView{background-position: -540px -200px;}
+.ImgMenu{background-position: -570px -200px;}
+.ImgPanelBar{background-position: -600px -200px;}
+.ImgRating{background-position: -630px -200px;}
+.ImgRotator{background-position: -660px -200px;}
+.ImgScheduler{background-position: -690px -200px;}
+.ImgSlider{background-position: -720px -200px;}
+.ImgSiteMap{background-position: -750px -200px;}
+.ImgSpell{background-position: -780px -200px;}
+.ImgSplitter{background-position: -810px -200px;}
+.ImgTabStrip{background-position: -840px -200px;}
+.ImgTagCloud{background-position: -870px -200px;}
+.ImgToolBar{background-position: -900px -200px;}
+.ImgToolTip{background-position: -930px -200px;}
+.ImgTreeList{background-position: -960px -200px;}
+.ImgTreeView{background-position: -990px -200px;}
+.ImgUpload{background-position: -1020px -200px;}
+.ImgWindow{background-position: -1050px -200px;}
+.ImgXmlHttpPanel{background-position:-1080px -200px;}
+.ImgRibbonBar {background-position:-1140px -200px;}
+.ImgNotification {background-position:-1170px -200px;}
+.ImgImageEditor {background-position:-1200px -200px;}
+
+
+
+.qsfLeft table ul
+{
+	list-style:none;
+	margin: -8px 0 0 -5px;
+	padding:0;
+}
+
+.qsfLeft .controlMenu li
+{
+	margin:0;
+	padding:0;
+}
+
+.qsfLeft .controlMenu li li
+{
+	padding:0;
+}
+
+.qsfLeft .collapsed
+{
+	background-position: -230px -548px ;
+}
+
+.qsfLeft .expanded
+{
+	background-position: -10px -539px ;
+}
+
+.qsfLeft .expanded .collapsed
+{
+	background-position: -23px -520px ;
+}
+
+.qsfLeft .expanded .expanded
+{
+	background-position: 0 -589px ;
+}
+
+
+.qsfLeft .menuContainer .collapsed:hover a, 
+.qsfLeft .menuContainer .expanded .collapsed:hover a
+{
+	color: #86e322;
+}
+
+.qsfLeft .menuContainer .collapsed a, 
+.qsfLeft .menuContainer .expanded a
+{
+	color: #fff;
+	font-size: 12px;
+	padding: 3px 0 3px 9px;
+	outline: 0;
+}
+.qsfLeft .menuContainer .expanded .collapsed a, 
+.qsfLeft .menuContainer .expanded .expanded a
+{
+	color: #fff;
+}
+.qsfLeft .menuContainer .expanded a
+{
+	padding: 10px 0 3px 9px;
+	font-size: 14px;
+}
+
+.qsfLeft .menuContainer .expanded li a, .qsfLeft .menuContainer .expanded .expanded li a
+{
+	color: #a8d4bd;
+	font-size: 11px;
+	padding: 2px 0 2px 9px;
+}
+
+.qsfLeft .menuContainer .expanded li a:hover, 
+.qsfLeft .menuContainer .expanded .expanded li a:hover
+{
+	color: #86e322;
+	background-position: -220px -589px;
+}
+
+.qsfLeft .menuContainer .expanded .expanded a:hover, 
+.qsfLeft .menuContainer .expanded .collapsed a:hover
+{
+	color: #86e322;
+	background: none;
+}
+
+.qsfLeft li .collapsed
+{
+	background-position:-588px -1544px;
+}
+
+.qsfLeft li .expanded
+{
+	background-position:-887px -1493px;
+}
+
+.qsfLeft .menuContainer ul
+{
+	margin:8px 0 0 1px;
+	font-size: 12px;
+}
+
+* html .qsfLeft .menuContainer ul li
+{
+	zoom: 1;
+}
+
+.qsfLeft .menuContainer ul ul
+{
+	margin: 0 0 5px 0;
+}
+
+.qsfLeft .menuContainer a
+{
+	display:block;
+	text-decoration:none;
+	color: #fff;
+	font-size: 12px;
+	padding: 3px 0 3px 9px;
+	outline: 0;
+}
+
+.qsfLeft .menuContainer a:hover
+{
+	color:#86e322;
+}
+.qsfLeft .menuContainer .expanded a:hover
+{
+	background: none;
+}
+
+.qsfLeft .menuContainer a img, 
+.qsfLeft .allProductsMainCell a img
+{
+	margin:0 0 0 6px;
+}
+
+
+.qsfLeft .menuContainer .tabSelected a
+{
+	background-position: -220px -588px;
+	color:#86e322;
+}
+
+.qsfLeft .menuContainer li .tabSelected a, 
+.qsfLeft .menuContainer .expanded:hover .tabSelected a,
+.qsfLeft .menuContainer .expanded li .tabSelected a, 
+.qsfLeft .menuContainer .expanded .expanded:hover .tabSelected a
+{
+	background-position:-220px -589px;
+	color:#86e322;
+}
+
+/*controls navigation*/
+
+.qsfLeft .allProducts a
+{
+	position:relative;
+	display:block;
+	height:21px;
+	padding:3px 0 0 32px;
+	font-size:13px;
+	color:#a8d4bd;
+	text-decoration:none;
+}
+
+*>.qsfLeft .allProducts a:hover
+{
+	color:#68d62c;
+}
+
+.qsfLeft .allProducts span
+{
+	position:absolute;
+	top:3px;
+	left:9px;
+	width:16px;
+	height:16px;
+	border:0;
+	background-color:transparent;
+	outline:none;
+	cursor:pointer;
+}
+
+.IconAjax{background-position: 0 -230px;}
+.IconAsyncUpload{background-position:-30px -230px;}
+.IconBinaryImage{background-position: -60px -230px;}
+.IconButton{background-position: -90px -230px;}
+.IconCalendar{background-position: -120px -230px;}
+.IconCaptcha{background-position: -150px -230px;}
+.IconChart{background-position: -180px -230px;}
+.IconColorPicker{background-position: -210px -230px;}
+.IconComboBox{background-position: -240px -230px;}
+.IconDataPager{background-position:-270px -230px;}
+.IconOverview{background-position: -1110px -230px;}
+.IconDock{background-position:-300px -230px;}
+.IconEditor{background-position: -330px -230px;}
+.IconFileExplorer{background-position: -360px -230px;}
+.IconFilter{background-position: -390px -230px;}
+.IconFormDecorator{background-position: -420px -230px;}
+.IconGrid{background-position: -450px -230px;}
+.IconInput{background-position: -480px -230px;}
+.IconListBox{background-position: -510px -230px;}
+.IconListView{background-position: -540px -230px;}
+.IconMenu{background-position: -570px -230px;}
+.IconPanelBar{background-position: -600px -230px;}
+.IconRating{background-position: -630px -230px;}
+.IconRotator{background-position: -660px -230px;}
+.IconScheduler{background-position: -690px -230px;}
+.IconSlider{background-position: -720px -230px;}
+.IconSiteMap{background-position: -750px -230px;}
+.IconSpell{background-position: -780px -230px;}
+.IconSplitter{background-position: -810px -230px;}
+.IconTabStrip{background-position: -840px -230px;}
+.IconTagCloud{background-position: -870px -230px;}
+.IconToolBar{background-position: -900px -230px;}
+.IconToolTip{background-position: -930px -230px;}
+.IconTreeList{background-position: -960px -230px;}
+.IconTreeView{background-position: -990px -230px;}
+.IconUpload{background-position:-1020px -230px;}
+.IconWindow{background-position: -1050px -230px;}
+.IconXmlHttpPanel{background-position: -1080px -230px;}
+.IconRibbonBar{background-position: -1140px -230px;}
+.IconNotification{background-position: -1170px -230px;}
+.IconImageEditor{background-position: -1200px -230px;}
+
+/*title area*/
+.titleRight .titleRightTopLeft
+{
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	top: 0;
+	left: 0;
+	background-position: -754px -5px;
+}
+
+/*.titleRight .titleRightTopRight*/
+.head2 .titleRightTopRight
+{
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	top: 79px;
+	right: 0;
+	background-position: -750px -5px;
+}
+
+.titleLeft
+{
+	width: 450px;
+	display: inline-block;
+	zoom: 1; /* IE hack to trigger hasLayout */
+	*display: inline; /* IE hack to achieve inline-block behavior */
+	position:relative;
+}
+
+.titleLeft h1
+{
+	float:left;
+	width:634px;
+	margin:0;
+	padding:9px 0 5px 29px;
+	font:20px/39px "segoe ui",arial,sans-serif;
+	color:#000;
+}
+
+.titleLeft h1 input
+{
+	float:left;
+	width:24px;
+	height:24px;
+	margin:8px 7px 8px 14px;
+	border:0;
+	background-color:transparent;
+	background-repeat:no-repeat;
+	outline:none;
+}
+
+.titleLeft h1 a
+{
+	color:#000;
+	text-decoration:none;
+	cursor:text;
+}
+
+.qsfOverview .titleRight,
+.qsfOverview .titleLeft
+{
+	height:30px;
+}
+
+
+
+.qsfOverview .titleLeft h1 input
+{
+	margin-top:10px;
+}
+
+/*rating*/
+
+.demoRate
+{
+	padding:10px 0 0;
+	text-align:right;
+}
+
+.demoRate em,
+.demoRate .RadRating
+{
+	float:left;
+	font-style:normal;
+}
+
+.demoRate em,
+.demoRate em a
+{
+	line-height:19px;
+	color:#cff4fe;
+	text-decoration:none;
+}
+
+.demoRate em
+{
+	padding:0 7px 0 0;
+}
+
+.demoRate .RadRating
+{
+	margin:-2px 20px 0 0;
+	text-align:left;
+}
+
+.demoRate em a
+{
+	margin-right: -7px;
+	padding-right: 31px;
+	outline: none;
+}
+
+.rateMenu textarea
+{
+    background: #444 !important;
+    color: #FFF;
+    border: 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    height: 83px;
+    margin: 16px 0 20px;
+    overflow: auto;
+    width: 316px;
+}
+
+.rateMenu button
+{
+	width: 70px;
+	height: 25px;
+	border: 0;
+	cursor: pointer;
+}
+
+.rateMenu .post
+{
+	margin-left: 155px;
+	background: 0 0 no-repeat url(ratePost.gif);
+}
+
+.rateMenu .cancel
+{
+	background: 0 0 no-repeat url(rateCancel.gif);
+}
+
+/*code switch*/
+
+.codeNskin
+{
+	line-height:40px;
+	padding:0 15px 0 0;
+	text-align:right;
+}
+
+.codeNskin a
+{
+	display:inline-block;
+	margin-left:8px;
+	color:#001119;
+}
+
+.qsfDark .codeNskin a,
+.qsfOfficeDark .codeNskin a
+{
+	color:#eee;
+}
+
+.codeNskin div a
+{
+	margin:0;
+}
+
+.codeNskin .cssel,
+.codeNskin .vbsel
+{
+	color:#00566d;
+}
+
+.qsfDark .codeNskin .cssel,
+.qsfDark .codeNskin .vbsel,
+.qsfOfficeDark .codeNskin .cssel,
+.qsfOfficeDark .codeNskin .vbsel,
+{
+	color:#0c94a3;
+}
+
+.codeNskin .cssel
+{
+	background-position:-598px -450px;
+}
+.codeNskin .vbsel
+{
+	background-position:-587px -450px;
+}
+
+.codeNskin span
+{
+	margin:0 8px 0 24px;
+	vertical-align:middle;
+}
+
+/* qsf11 Code Switch */
+
+.qsfSourceCode
+{
+	height: 65px;
+	line-height: 65px;
+	clear: both;
+}
+
+.qsfSourceCode h4
+{
+	width: 100px;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	display: inline-block;
+	border-bottom: 0 !important;
+	zoom: 1; /* IE hack to trigger hasLayout */
+	*display: inline; /* IE hack to achieve inline-block behavior */
+	color: #001119 !important;
+}
+
+.qsfSourceCode a
+{
+	height: 19px;
+	line-height: 19px;
+	margin: 0 2px 0;
+	text-align: center;
+	font-size: 11px;
+	font-weight: bold;
+	display: inline-block;
+	zoom: 1; /* IE hack to trigger hasLayout */
+	*display: inline; /* IE hack to achieve inline-block behavior */
+	color: #2a5db0;
+}
+.qsfSourceCode a:hover
+{
+	color: #002a7f;
+}
+
+
+
+.qsfSourceCode a.qsfCodeSelectedVB,
+.qsfSourceCode a.qsfCodeSelectedCS,
+.qsfSourceCode a.qsfCodeSelectedVB:hover,
+.qsfSourceCode a.qsfCodeSelectedCS:hover
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.qsfSourceCode a.qsfCodeSelectedCS, 
+.qsfSourceCode a.qsfCodeSelectedCS:hover
+{
+	width: 30px;
+	background-position: -200px -135px;
+}
+
+.qsfSourceCode a.qsfCodeSelectedVB,
+.qsfSourceCode a.qsfCodeSelectedVB:hover
+{
+	width: 45px;
+	background-position: -231px -135px;
+}
+
+/* qsf11 Code Switch end */
+
+.skinChooserItem
+{
+    height:124px;
+    background-repeat:no-repeat;
+    display:block;   
+    background-position:6px 22px;
+    background-color:#d6eefd;
+    color:#7691a2;
+    font-size:14px;
+    font-weight:bold;       
+    cursor:pointer;
+    padding:4px 13px;
+}
+
+.skinChooserItem:hover
+{
+    color:#7691a2;
+    border:1px solid #0b496d;
+    padding:3px 12px;
+    background-position:5px 21px;
+}
+
+/*info panel*/
+
+.infoPanel,
+.bigModule
+{
+	border:1px solid #ffe58a;
+	margin:1.6em 0;
+	padding:1em 3em 1em 0;
+	background:#fff3c8 repeat-x url(infoPanel.gif);
+	color:#000;
+}
+
+.infoInner,
+.bigModuleBottom
+{
+	min-height:30px;
+	padding:0 0 0 66px;
+	background-position: -1464px -576px;
+	background-color: transparent;
+}
+
+* html .infoInner,
+* html .bigModuleBottom
+{
+	height:30px;
+}
+
+.infoPanel .title,
+.bigModule .title
+{
+	display:block;
+	margin:0 0 1.4em;
+	padding:6px 0 0;
+	font-size:1.2em;
+}
+
+.infoPanel a,
+.bigModule a
+{
+	color:#f60;
+}
+
+.infoChart
+{
+	border-color:#c8edfa;
+	background-color:#d2eff9;
+	background-image:url(infoChart.gif);
+}
+
+.infoChart,
+.infoChart a
+{
+	color:#00303f;
+}
+
+.infoChart .infoInner
+{
+	background:no-repeat 16px 3px url(infoChartIcon.gif);
+}
+
+.infoChart ul
+{
+	margin:-6px 0 0;
+	padding:0;
+	list-style:none;
+	line-height:22px;
+}
+
+.infoChart li
+{
+	padding:0 0 0 26px;
+}
+
+.infoChart a:hover
+{
+	text-decoration:none;
+}
+
+.infoChart p
+{
+	margin:-26px 0 10px;
+	padding:0;
+}
+
+/*configurator*/
+
+.qsfConfig
+{
+	padding:0 0 1.4em;
+}
+
+.cfgVertical
+{
+	min-width: 260px;
+	float: right;
+}
+* html .cfgVertical {width: 260px;}
+*+html .cfgVertical {width: 260px;}
+
+.cfgHead
+{
+	display:block;
+	background:0 center repeat-x url(blueDots.gif);
+	color:#666;
+	font-size:14px;
+	line-height:22px;
+	outline:none;
+	text-decoration:none;
+}
+
+.qsfTransparent .cfgHead
+{
+	color: #000;
+	background-position:0 bottom;
+}
+
+.qsfDark .cfgHead,
+.qsfOfficeDark .cfgHead
+{
+	color: #ccc;
+}
+
+.cfgTitle
+{
+	float:left;
+	padding:0 8px 0 1px;
+	background-color:#fff;
+}
+
+.qsfDark .cfgTitle
+{
+	background-color:#2e2e2e;
+}
+
+.qsfOfficeDark .cfgTitle
+{
+	background-color:#6f6f6f;
+}
+
+.qsfTransparent .cfgTitle
+{
+	background-color:transparent;
+}
+
+.cfgButton
+{
+	float:right;
+	width:17px;
+	height:17px;
+	padding:0 0 0 5px;
+	background-color: #fff;
+}
+
+.qsfDark .cfgButton
+{
+	background-color:#2e2e2e;
+}
+
+.qsfOfficeDark .cfgButton
+{
+	background-color:#6f6f6f;
+}
+
+.qsfTransparent .cfgButton
+{
+	background-color: transparent;
+}
+
+.cfgUp
+{
+	background-position:-300px -135px;
+}
+.cfgDown
+{
+	background-position:-277px -135px;
+}
+
+.cfgUp:hover
+{
+	background-position:-346px -135px;
+}
+.cfgDown:hover
+{
+	background-position:-323px -135px;
+}
+
+.cfgContent
+{
+	margin:0 22px 0 0;
+	padding:1.2em 0 1.8em;
+	background:0 100% repeat-x url(blueDots.gif);
+}
+
+.qsfDark .cfgContent,
+.qsfOfficeDark .cfgContent
+{
+	background-image:url(blueDots.gif);
+}
+
+/*footer*/
+
+.qsfFooter
+{
+	position: relative;
+	padding-bottom:30px;
+	clear:both;
+	font-size:1.1em;
+	background-color: #000;
+}
+
+.qsfFooter .qsfFooterRounded
+{
+	position: relative;
+	background: #f1f3f3;
+	padding: 5px 0 40px 30px;
+	margin-top: -10px;
+}
+
+*html .qsfFooter .qsfFooterRounded
+{
+	height: 0;
+	padding-bottom: 15px;
+}
+
+*html .qsfFooter .qsfFooterRoundedInnerIE6
+{
+	height: 226px;
+	padding-bottom: 0;
+}
+
+.qsfFooter .qsfFooterRounded h3
+{
+	background-position: 0 -455px;
+	background-color: transparent;
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+    color: #232323;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 30px 65px 15px 0;
+    padding: 0 0 8px;
+}
+
+.qsfFooter h3.qsfFooterH3
+{
+    margin: 30px 0 15px 0;
+}
+
+.qsfFooter .qsfFooterRounded h4
+{
+	background-position: 0 -462px;
+	background-color: transparent;
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+    color: #232323;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0 0 8px;
+}
+
+.qsfFooter .qsfFooterRounded p
+{
+	width: 870px;
+	margin: 0;
+	padding: 0 0 10px 0;
+	color: #555;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+*html .qsfFooter .qsfFooterRounded p
+{
+	width: 840px;
+}
+
+.qsfFooter .qsfFooterRounded a
+{
+	color: #418B04;
+	text-decoration: underline;
+}
+
+.qsfFooter .qsfFooterRounded a:hover
+{
+	text-decoration: none;
+}
+
+.qsfFooter .qsfFooterBottomLeft
+{
+	position: absolute;
+	width: 4px;
+	height: 5px;
+	overflow: hidden;
+	left: 0;
+	bottom: 0;
+	background-position: -754px 0;
+}
+
+* html .qsfFooter .qsfFooterBottomLeft
+{
+    font-size: 4px;
+	top: 226px;
+    left: 0px;
+	zoom: 1;
+}
+* html .qsfFooter .qsfFooterBottomLeft { top /**/: 230px; }
+* html .qsfFooter .qsfFooterRoundedInnerIE6 { height /**/: 235px; }
+.qsfFooter .qsfFooterBottomRight
+{
+	position: absolute;
+	width: 4px;
+	height: 5px;
+	overflow: hidden;
+	right: 0;
+	bottom: 0;
+	background-position: -750px 0;
+}
+
+* html .qsfFooter .qsfFooterBottomRight
+{
+    font-size: 4px;
+	top: 226px;
+}
+* html .qsfFooter .qsfFooterBottomRight { top /**/: 230px; }
+
+.qsfLastText
+{
+    padding-bottom: 30px
+}
+
+.qsfFooter .qsfFooterRounded img
+{
+	border:0;
+	vertical-align:bottom;
+	margin:0 11px 0 0;
+}
+
+.qsfFooter,
+.qsfFooter a
+{
+	color:#125f76;
+	text-decoration:none;
+}
+
+.qsfFooter a:hover
+{
+	text-decoration:underline;	
+}
+
+.qsfFooter address
+{
+	display:inline;
+	font-style:normal;
+}
+
+.qsfFooter p
+{
+	margin:0.4em 0;
+	padding:0;
+}
+
+.qsfFooter .qsfFooterCopy
+{
+	font-size: 11px;
+	color: #929f8f;
+	padding: 55px 30px 0;
+	background: url(telerikFooterLogo.gif) no-repeat 30px 26px;
+	line-height:15px;
+}
+
+.qsfFooter .qsfFooterTerms
+{
+	position: absolute;
+	right: 30px;
+	bottom: 55px;
+	list-style: none;
+}
+
+*html .qsfFooter .qsfFooterTerms
+{
+	top: 265px;
+}
+
+.qsfFooter .qsfFooterTerms li
+{
+	float: left;
+	padding: 0 3px 0 0px;
+	color: #929f8f;
+	font-size:11px;
+}
+
+.qsfFooter .qsfFooterTerms li a
+{
+	color: #929f8f;
+	font-size: 11px;
+}
+
+/* QSF footer resources images */
+
+.qsfFooterRes
+{
+	
+}
+
+.qsfFooterRes .qsfAspNet,
+.qsfFooterRes .qsfAjax,
+.qsfFooterRes .qsfVS,
+.qsfFooterRes .qsfWAI10,
+.qsfFooterRes .qsfWAI20,
+.qsfFooterRes .qsfxhtml11
+{
+	display: inline-block;
+	zoom: 1; /* IE hack to trigger hasLayout */
+	*display: inline; /* IE hack to achieve inline-block behavior */
+	height: 31px;
+	background: url('qsfFooterSprite11.gif');
+	margin: 0 20px 0 0;
+}
+
+.qsfFooterRes a:hover
+{
+	cursor: default;
+}
+
+.qsfFooterRes .qsfAspNet
+{
+	width: 117px;
+	background-position: 0 0;
+}
+
+.qsfFooterRes .qsfAspNet:hover
+{
+	background-position: 0 -32px;
+}
+
+.qsfFooterRes .qsfAjax
+{
+	width: 105px;
+	background-position: -137px 0;
+}
+
+.qsfFooterRes .qsfAjax:hover
+{
+	background-position: -137px -32px;
+}
+
+.qsfFooterRes .qsfVS
+{
+	width: 243px;
+	background-position: -259px 0;
+}
+
+.qsfFooterRes .qsfVS:hover
+{
+	background-position: -259px -32px;
+}
+
+.qsfFooterRes .qsfWAI10
+{
+	width: 81px;
+	height: 29px;
+	background-position: -523px 0;
+}
+
+.qsfFooterRes .qsfWAI10:hover
+{
+	background-position: -523px -32px;
+}
+
+.qsfFooterRes .qsfWAI20
+{
+	width: 81px;
+	height: 29px;
+	background-position: -617px 0;
+}
+
+.qsfFooterRes .qsfWAI20:hover
+{
+	background-position: -617px -32px;
+}
+
+.qsfFooterRes .qsfxhtml11
+{
+	width: 69px;
+	height: 29px;
+	background-position: -711px 0;
+}
+
+.qsfFooterRes .qsfxhtml11:hover
+{
+	background-position: -711px -32px;
+}
+
+/*demo area*/
+
+.demoArea
+{
+	background: url("qsfBigHolderHomeBgr.gif") repeat-x scroll 0 -45px #FFFFFF;
+	color:#001119;
+	z-index: 1;
+	padding-top: 15px;
+}
+
+.qsfDark .demoArea
+{
+	background:#2e2e2e;
+	color:#eee;
+	padding-top: 30px;
+}
+
+.qsfOfficeDark .demoArea
+{
+	background:#6f6f6f;
+	color:#e2e2e2;
+	padding-top: 30px;
+}
+
+.qsfTransparent .demoArea
+{
+	background: url("qsfTransparent.jpg") no-repeat right 0 #014B7B;
+	padding-top: 30px;
+}
+
+.qsfDark .demoArea .qsfConsoleClear
+{
+	/*color: #eee;*/
+}
+
+.innerArea
+{
+	padding:0 30px 30px;
+}
+
+.qsfDemoInfoSource
+{
+    padding:0 30px;
+    background-color: #F1F3F3;
+}
+
+.exampleContainer
+{
+	position: relative;
+	z-index: 2;
+}
+* html .exampleContainer { position: static; }
+
+h2.qsfSubtitle
+{
+	margin:1.4em 0 0.8em;
+	color:#0c94a3;
+	font:14px/20px "segoe ui",arial,sans-serif;
+}
+
+h3.qsfSubtitle
+{
+	margin:2em 0 1em;
+	color:#0c94a3;
+	font:bold 13px/18px arial,sans-serif;
+}
+
+.module /*obsolete*/
+{
+	padding:10px;
+}
+
+/*common buttons*/
+
+.innerArea .button,
+.qsfButton,
+.qsfButtonBig,
+.qsfButtonBigger
+{
+	border:1px solid;
+	border-color:#4e667e #5e7488 #425c71;
+	padding-top:1px;
+	padding-bottom:1px;
+	background:#d6e1e7 repeat-x 0 0 url(commonButton.gif);
+	color:#0d202b;
+	font:12px "segoe ui",tahoma,sans-serif;
+}
+
+.bigModule a.button,
+a.qsfButton
+{
+	display:block;
+	width:100px;
+}
+
+/*event console*/
+
+.qsfEventLogWrapper
+{
+	margin-top:10px;
+	position:relative;
+	height:150px;
+}
+
+* html .qsfEventLogWrapper
+{
+	clear: both;
+}
+
+.qsfConsole
+{
+	position:absolute;
+	top:23px;
+	left:0;
+	display:block;
+	width:100%;
+	bottom:0;
+	font:11px Consolas, monospace;
+	padding:0;
+	margin:0;
+	border:1px solid #CCC;
+    overflow:auto;
+    background:white;
+    height: 400px;
+}
+* html .qsfConsole
+{
+    height: 140px;
+    display: block;
+}
+
+.qsfConsole spanss
+{
+	color: #001119;
+    display:block;
+    margin:0;
+    padding:5px 5px 5px 24px;
+    background:url('../Images/qsfConsoleInfo.png') no-repeat 5px 50%;
+    border-bottom:1px solid #ddd;
+    zoom:1;
+}
+
+
+
+.qsfConsole #info
+{
+	color: #001119;
+    display:block;
+    margin:0;
+    padding:5px 5px 5px 24px;
+    background:url('../Images/qsfConsoleInfo.png') no-repeat 5px 50%;
+    border-bottom:1px solid #ddd;
+    zoom:1;
+}
+
+.qsfConsole #error
+{
+	color: #001119;
+    display:block;
+    margin:0;
+    padding:5px 5px 5px 24px;
+    background:url('../Images/qsfConsoleClear.png') no-repeat 5px 50%;
+    border-bottom:1px solid #ddd;
+    zoom:1;
+}
+
+.qsfConsoleClear {
+    background:url('../Images/qsfConsoleClear.png') no-repeat 2px 2px;
+    font:normal normal 11px "Segoe UI", Arial, sans-serif;
+    border:0;
+    display:block;
+    padding:0 0 2px 17px;
+    float:right;
+    color:#333;
+    height:17px;
+    outline:0;
+}
+
+/*code viewer*/
+
+#codeContainer
+{
+	position: relative;
+	z-index: 1;
+}
+
+#codeTitle
+{
+	clear:both;
+}
+
+.qsfCodeTabs
+{
+	color:#001119;
+	padding:0;
+	position:relative;
+	z-index:1;
+	overflow:hidden;
+	zoom:1;
+	font-size: 12px;
+}
+
+.codeOuter .qsfCodeInfoLinks       
+{
+    display: block;
+    float: right;
+    padding: 10px;
+    color: #2a5db0;
+    text-decoration: underline;
+}
+
+.codeOuter .qsfCodeInfoLinks:hover
+{
+    color: #002a7f;
+}
+
+/* This selectors are used from the first tab in demo views*/
+.descriptionOuter
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C5C5C5;
+    clear: both;
+    height: auto;
+    position: relative;
+    top: -4px;
+}
+.qsfSectionTabs
+{
+    margin-top: 40px;
+    color: #001119;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    zoom: 1;
+    font-size: 12px;
+}
+.qsfSectionTabs .RadToolBar_FileSelection
+{
+    zoom: 1;
+}
+ul.descriptionListings
+{
+    list-style-type: none;
+}
+ul.descriptionListings
+{
+    height: auto;
+    list-style-type: none;
+    margin: 0 6px 6px;
+    overflow: auto;
+    padding: 0 10px 0.8em;
+}
+
+ul.descriptionListings #instructions-section
+{
+    padding: 0 0 0 55px;
+    min-height: 40px;
+    background-position: -1464px -576px;
+}
+
+* html ul.descriptionListings #instructions-section
+{ 
+    height: 40px;
+}
+/* */
+.codeOuter
+{
+	clear:both;
+	background: #fff;
+	border:1px solid #c5c5c5;
+	position:relative;
+	top:-4px;
+	height: auto;
+}
+*+html .codeOuter { zoom: 1; }
+* html .codeOuter { zoom: 1; }
+
+.codeOuter pre
+{
+	font-size:12px;
+}
+
+*+html .qsfLoadingMessage
+{
+	position: relative;
+}
+
+.qsfOverlay
+{
+	position:absolute;
+	bottom:8px;
+	left:7px;
+	z-index:20;
+	padding:0;
+	margin:0;
+	opacity:0;
+	background:#fff url(codeLoader.gif) no-repeat center center;
+}
+
+ul.codeListings
+{
+	list-style-type:none;
+	margin: 0 6px 6px;
+	padding: 0 10px 0.8em;
+	overflow:auto;
+	height: auto;
+}
+
+/* IE6 resizes the container on bigger PRE elements. */
+* html ul.codeListings
+{
+	width: 835px;
+}
+
+ul.codeListings ul
+{
+	list-style-type:circle;
+	list-style-position:inside;
+	margin-left:20px;
+	padding-left:0;
+}
+
+ul.codeListings code
+{
+	font:13px "Consolas", "Courier New", Monospace;
+	border: 0;
+}
+
+/*code viewer toolbar*/
+
+div.RadToolBar_FileSelection
+{
+	position:relative;
+	z-index:1;
+	width:880px;
+	overflow:hidden;
+	float:left;
+}
+
+div.RadToolBar_FileSelection .rtbUL
+{
+	display:block;
+	width:880px;
+	padding: 0 0 0 14px;
+}
+
+div.RadToolBar_FileSelection .rtbInner
+{
+	padding:0;
+}
+
+.RadToolBar_FileSelection .rtbWrap
+{
+	color:#000;
+	line-height:26px;
+}
+
+*+html .RadToolBar_FileSelection .rtbWrap
+{
+	line-height:28px;
+}
+
+.RadToolBar_FileSelection .rtbWrap .rtbOut
+{
+	padding:0 10px;
+}
+
+div.RadToolBar_FileSelection .rtbIn
+{
+	padding: 0 0 0 3px;
+}
+
+div.RadToolBar_FileSelection .description .rtbOut { background-position: -590px -744px }
+div.RadToolBar_FileSelection .file-type-aspx .rtbOut { background-position: -590px -844px }
+div.RadToolBar_FileSelection .file-type-ascx .rtbOut { background-position: -590px -1244px }
+div.RadToolBar_FileSelection .file-type-cs .rtbOut { background-position: -590px -944px }
+div.RadToolBar_FileSelection .file-type-vb .rtbOut { background-position: -590px -1044px }
+div.RadToolBar_FileSelection .file-type-js .rtbOut { background-position: -590px -1144px }
+div.RadToolBar_FileSelection .file-type-css .rtbOut { background-position: -590px -1394px }
+.RadToolBar_FileSelection .rtbItemHovered .rtbText
+
+{
+	/*background:#e5f5f7;*/
+	text-decoration: underline;
+	
+}
+
+/*a*/
+.RadToolBar_FileSelection .selectedTab .rtbWrap, 
+.RadToolBar_FileSelection .selectedTab .rtbWrap:hover, 
+.RadToolBar_FileSelection .selectedTab .rtbWrap:focus
+{
+	background: url("qsfLayout11.png") no-repeat -762px 0 !important;
+	border: 0;
+	padding: 0 0 0 8px;
+}
+
+*html .RadToolBar_FileSelection .selectedTab .rtbWrap, 
+*html .RadToolBar_FileSelection .selectedTab .rtbWrap:hover, 
+*html .RadToolBar_FileSelection .selectedTab .rtbWrap:focus
+{
+	background: url("qsfLayout11.gif") no-repeat -762px 0 !important;
+}
+
+.RadToolBar_FileSelection .selectedTab .rtbWrap .rtbOut
+{
+	background-position: right 0;
+	border: 0;
+	padding: 0 8px 0 0;
+	font-weight:bold;
+}
+
+div.RadToolBar_FileSelection .rtbSplBtn .rtbChoiceArrow
+{
+	width:20px;
+	margin-left:5px;
+	background-position: -375px -134px;
+}
+
+.RadToolBarDropDown_FileSelection
+{
+	background:#fff;
+	border:1px solid #b8b8b8;
+	border-top-width:0;
+	overflow:hidden !important;
+}
+
+div.RadToolBar_FileSelection .rtbItem { margin:0;}
+
+div.RadToolBarDropDown_FileSelection .rtbItem { padding:0;}
+
+div.RadToolBarDropDown_FileSelection .rtbWrap
+{
+	color:#000;
+	padding:2px 35px 3px 27px;
+	font-size:12px;
+}
+
+div.RadToolBarDropDown_FileSelection .rtbWrap:hover
+{
+	background:#e5e7e7;
+}
+
+.qsfCodeLeft,
+.qsfCodeRight
+{
+	width:20px;
+	height:22px;
+	margin-top:3px;
+	float:left;
+	overflow:hidden;
+	font-size:0;
+	line-height:0;
+	text-indent:-2222px;
+	background:transparent url(../Img/qsfSprite.gif) no-repeat;
+	outline:none;
+}
+
+.qsfCodeLeft
+{
+	background-position:-300px -750px;
+	margin-left:6px;
+}
+.qsfCodeLeft:hover
+{
+	background-position:-300px -800px;
+}
+
+.qsfCodeRight
+{
+	background-position:-300px -850px;
+}
+.qsfCodeRight:hover
+{
+	background-position:-300px -900px;
+}
+
+/*home page*/
+
+.qsfVersion
+{
+	display: block;
+	width: 368px;
+	font-size:10px;
+	text-align: right;
+	font-weight: bold;
+	color: #666;
+}
+
+.qsfVersion a
+{
+	color:#70a842;
+}
+
+.qsfVersion a:hover
+{
+	text-decoration: none;
+}
+
+.qsfBgHolder
+{
+	background: url("qsfBigHolderHomeBgr.gif") repeat-x scroll 0 0 #fff;
+	height:100%;
+	padding: 23px 60px 25px 60px;
+}
+
+.qsfBgHolder .qsfBgHolderLeftCont
+{
+	display: inline-block;
+	zoom: 1; /* IE hack to trigger hasLayout */
+	*display: inline; /* IE hack to achieve inline-block behavior */
+	width: 302px;
+	height: 273px;
+	padding: 22px 20px 0 50px;
+}
+.qsfBgHolder .qsfBgHolderLeftContHome
+{
+	display: inline-block;
+	zoom: 1; /* IE hack to trigger hasLayout */
+	*display: inline; /* IE hack to achieve inline-block behavior */
+	width: 328px;
+	height: 275px;
+	padding: 60px 20px 0 20px;
+}
+
+.qsfBgHolder .qsfBgHolderRightCont
+{
+	display: inline-block;
+	zoom: 1; /* IE hack to trigger hasLayout */
+	*display: inline; /* IE hack to achieve inline-block behavior */
+	width: 400px;
+	margin: 35px 0 0 40px;
+	vertical-align: top;
+}
+
+*html .qsfBgHolder .qsfBgHolderRightCont
+{
+	width: 400px;
+	margin: 35px 0 0 44px;
+	overflow: hidden;
+}
+
+*html .qsfBgHolder .qsfBgHolderRightContIE6
+{
+	margin-left: 9px;
+}
+
+.radLogoHome
+{
+	margin:0;
+	padding:0;
+	width: 285px;
+	height:66px;
+	background-position: 0 -354px;
+}
+
+.radLogoHome a
+{
+	display:block;
+	width:100%;
+	height:100%;
+	text-decoration:none;
+	text-indent:-3333px;
+	overflow:hidden;
+	outline:none;
+}
+
+.radFeatures
+{
+	width: 423px;
+	margin: 0;
+	padding: 15px 0 15px 0;
+	color: #666;
+	list-style:none;
+	font:11px/15px arial,sans-serif;
+}
+
+*html .radFeatures
+{
+	width: 400px;
+}
+
+.radFeatures a
+{
+	color:#70a842;
+}
+
+.radFeatures a:hover
+{
+	text-decoration: none;
+}
+
+.radFeatures li
+{
+	padding:1px 0 1px 7px;
+	background-position: -653px -549px;
+}
+
+.getValue
+{
+	padding:0; 
+	
+}
+
+.getValue h2
+{
+	padding:0 0 0 7px;
+	margin:0;
+	font: normal 14px/30px arial,sans-serif;
+	color:#000;
+}
+
+.getValue p
+{
+	margin: 0 0 0 0px;
+	padding:10px 0 0 70px;
+	height: 70px;
+	font:11px/1.6 arial,sans-serif;
+	color:#666;
+	background-position: -310px -350px;
+}
+
+.getValue a
+{
+	color:#70a842;
+	font-weight: bold;
+	font-size: 11px;
+	padding: 5px 0 0 5px;
+	background-position: -653px -546px;
+}
+
+*html .getValue a
+{
+	padding: 4px 0 0 5px;
+}
+
+.getValue a:hover
+{
+	text-decoration:none;
+}
+
+.highlights
+{
+	padding: 0 60px;
+	background: #f1f3f3;
+	overflow: hidden;
+	height: 100%
+}
+
+.highlightsTopBgr
+{
+	height: 2px;
+	background-position: 0 -450px;
+}
+
+.highlights h3
+{
+	margin:33px 0 15px;
+	padding:0 0 8px;
+	background-position: 0 -455px;
+	background-repeat: repeat-x;
+	color:#232323;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.highlights h3 a
+{
+	color:#232323;
+	text-decoration:none;
+	cursor:default;
+}
+
+.highlights dl
+{
+	margin:0;
+	padding:0;
+	float:left;
+	width:260px;
+	height:100px;
+	padding: 0 20px 5px 0;
+}
+
+.highlights dl.qsfNoPad
+{
+	padding-right:0;
+}
+
+.highlights dt
+{
+	font-size:15px;
+	padding:7px 0 3px;
+	color:#232323;
+}
+
+.highlights dd
+{
+	margin:0;
+	padding:5px 0;
+	color:#555;
+}
+
+.highlights dd a
+{
+	color:#418b04;
+}
+
+.highlights dd a:hover
+{
+	text-decoration: none;
+}
+
+
+/* QSF Demos Home Styles */
+.qsfHome .qsfDemos
+{
+	padding: 0 59px 36px;
+}
+
+.qsfHome .qsfDemos ul
+{
+	margin: 0; 
+	padding: 0;
+	list-style: none;
+	clear: both;
+}
+
+.qsfHome .qsfDemos li
+{
+	margin: 0 20px 0 0;
+	display: inline-block;
+	zoom: 1; /* IE hack to trigger hasLayout */
+	*display: inline; /* IE hack to achieve inline-block behavior */
+	width: 187px;
+	vertical-align: top;
+}
+
+*html .qsfHome .qsfDemos li
+{
+	margin-right: 18px;
+}
+
+.qsfHome .qsfDemos li.qsfNoBrd
+{
+	margin-right: 0;
+}
+
+.qsfHome .qsfDemos li a
+{
+	border: 1px solid #bbb;
+	display: block;
+	width: 190px;
+	height: 102px;
+	overflow: hidden;
+}
+
+.qsfHome .qsfDemos li a:hover
+{
+	border: 1px solid #666;
+}
+
+.qsfHome .qsfDemos li h2
+{
+	margin: 0;
+	padding: 11px 0 5px;
+}
+
+/*IE7 fix*/
+*+html .qsfHome .qsfDemos li h2
+{
+	padding: 1px 0 14px;
+}
+/*IE6 fix*/
+*html .qsfHome .qsfDemos li h2
+{
+	padding: 1px 0 14px;
+}
+
+.qsfHome .qsfDemos li h2 a
+{
+	text-decoration: none;
+	font-size: 15px;
+	color: #232323;
+	font-weight: normal;
+	border: 0;
+	height: auto;
+}
+
+.qsfHome .qsfDemos li h2 a:hover
+{
+	color: #666;
+	border: 0;
+}
+
+.qsfHome .qsfDemos li span
+{
+	display: block;
+	padding: 0 0 3px;
+	color: #555;
+}
+
+.qsfHome .qsfDemos li .qsfLaunchDemo
+{
+	text-decoration: none;
+	color: #418b04;
+	font-size: 11px;
+	font-weight: bold;
+	border: none;
+	height: auto;
+}
+
+.qsfHome .qsfDemos li .qsfLaunchDemo:hover
+{
+	color: #6fcb24;
+	border: none;
+}
+
+/* QSF Home Styles */
+.qsfOverview .qsfDemos
+{
+	height:423px;
+}
+
+.qsfOverview .qsfDemos ul
+{
+	margin:40px 0 0 40px;
+}
+
+.qsfOverview .qsfDemos li
+{
+	float:left;
+	width:400px;
+	list-style: none;
+}
+.qsfOverview .qsfDemos a
+{
+	float:left;
+	margin-right:20px;
+}
+
+.qsfOverview .qsfDemos a img
+{
+	width:200px;
+}
+
+.qsfOverview .qsfDemos dt
+{
+	padding:12px 0 0;
+	font-size:1.2em;
+	color:#00a5bc;
+}
+
+.qsfOverview .qsfDemos dd
+{
+	margin:10px 0 0;
+	color:#fff;
+}
+
+/* Skin chooser and skin chooser dropdown templates */
+
+div.rateMenu
+{
+    margin: 25px 30px 0 0;
+    padding-left: 3px;
+	position: absolute;
+	right: 0;
+	top: 79px;
+	background: url('Menu/rmSprite.png') no-repeat left -200px;
+}
+
+div.rateMenu .rmRootGroup li.rmItem .rmGroup 
+{
+    padding-left: 8px;
+}
+
+div.rateMenu .rmFirst 
+{
+    margin-left: -3px;
+}
+
+div.rateMenu .rmGroup
+{
+    width: 620px;
+}
+
+div.rateMenu .rmItem
+{
+    position: static;
+}
+
+.rateMenu .rmSlide
+{
+    left: auto !important;
+    right: 0;
+}
+
+.rateMenu .rmRootGroup
+{
+    background: url('Menu/rmSprite.png') no-repeat right -200px;
+}
+
+.rateMenu .rmRootGroup .rmRootLink
+{
+    width: 130px;
+}
+
+.rateMenu a.rmLink,
+.rateMenu a.rmTLink
+{
+	background-position: -1000px -1000px;
+}
+
+.rateMenu .rmRootGroup .rmRootLink,
+.rateMenu .rmRootLink .rmText
+{
+	font: 12px/23px "Segoe UI", Arial, sans-serif;
+	
+    color: #001119;
+	display: inline-block;
+    height: 23px;
+    padding-top: 0;
+    cursor: pointer;
+    zoom: 1;
+	*display: inline;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+
+.rateMenu .rmGroup .rmText
+{
+    cursor: default;
+}
+
+.rateMenu .rmFirst .rmSlide .rmGroup .rmTemplate
+{
+    padding: 0 0 50px;
+}
+
+.rateMenu .rmSlide .rmGroup .rmItem
+{
+    width: 100%;
+}
+
+.rateMenu .rmRootGroup .rateItem
+{
+    background-position: 0 -200px;
+}
+
+.rateMenu .rmRootGroup .rmLink:hover,
+.rateMenu .rmRootGroup .rmExpanded,
+.rateMenu .rmRootGroup .rmExpanded:hover
+{
+    background-position: 0 -230px;
+}
+
+.rateMenu .rmRootGroup .skinItem:hover,
+.rateMenu .rmRootGroup .skinItem.rmExpanded,
+.rateMenu .rmRootGroup .skinItem.rmExpanded:hover
+{
+    background-position: 100% -230px;
+}
+
+.rateMenu .rmRootGroup .rmLink:hover .rmText,
+.rateMenu .rmRootGroup .rmExpanded .rmText,
+.rateMenu .rmRootGroup .rmExpanded:hover .rmText
+{
+    color: #FFF;
+}
+
+.rateMenu .rmTemplate
+{
+    font-size: 12px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.qscItemNew img
+{
+	position: relative;
+	z-index: 0;
+}
+
+.qscItemNew span
+{
+	position: relative;
+	z-index: 1;
+}
+
+.qscItemNew span:after
+{
+	margin-top: -105px;
+    background: #000000;
+    color: #B8F648;
+    content: "NEW";
+    font-size: 9px;
+    font-weight: bold;
+    padding: 0 3px;
+    right: 8px;
+    position: absolute;
+    top: 5px;
+}
+
+.qscLink
+{
+    display: none;
+}
+
+.qscLink .qscTitle {
+    padding-left: 5px;
+    margin: 0;
+}
+
+.qscLink .qscTitle span
+{
+    font-family: Arial, sans-serif;
+    line-height: 24px;
+    vertical-align: top;
+    font-size: 7px;
+}
+
+.rateMenu .rmGroup div.rmText
+{
+    padding: 0;
+}
+
+.rateMenu .rmText ul.qscDropDownList
+{
+	list-style-type: none;
+	list-style-position: outside;
+	position: relative;
+	top: 5px;
+	padding: 5px 0 5px 10px;
+	margin: 0 0 10px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.rateMenu .rmText ul.qscDropDownList li
+{
+    display: inline-block;
+    *float: left;
+    width: 116px;
+	height: 132px;
+    padding: 2px;
+    text-align: center;
+}
+
+.rateMenu div.rmText ul.qscDropDownList a
+{
+    display: block;
+    cursor: pointer;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    color: #949494;
+    width: 100%;
+    height: 100%;
+}
+
+.rateMenu .rmTemplate img
+{
+	width: 90px;
+	height: 90px;
+    float: none;
+    margin: 0;
+}
+
+.rateMenu .rmText ul.qscDropDownList span
+{
+    float: none;
+    padding: 0;
+    font-size: 11px;
+	display: block;
+	margin: 0;
+}
+
+.rateMenu .rmText ul.qscDropDownList img
+{
+	margin-top: 10px;
+}
+
+.rateMenu .qscDropDownList a:hover span,
+.rateMenu .qscDropDownList a.qscItemSelected span
+{
+    color: #fff;
+}
+
+.rateMenu .qscDropDownList a:hover
+{
+    background: #272c2a;
+    padding-bottom: 1px;
+}
+
+.rateMenu .qscDropDownList a.qscItemSelected
+{
+	border-bottom: 1px solid #323735;
+    background: #272c2a;
+    padding: 0;
+}
+
+* html div.rateMenu .rmRootGroup .qscDropDownList a,
+* html div.rateMenu .rmRootGroup .qscDropDownList a:hover
+{
+    border-bottom: 0;
+    padding: 0;
+}
+
+.qscDDTL, .qscDDTR, .qscDDBL, .qscDDBR
+{
+    display: none;
+}
+
+.rateMenu h2
+{
+    color: #FFFFFF;
+    font: 18px/24px "Segoe UI",Arial,sans-serif;
+    margin: 0;
+    padding: 0 0 0 24px;
+}
+
+.rateMenu .rateMoveOut
+{
+    margin: 10px 0 40px;
+    padding: 0 0 0 20px;
+}
+
+.rateMenu .rateContainer
+{
+    min-height: 200px;
+}
+* html .rateMenu .rateContainer { height: 200px; }
+
+.rateMenu .rateLabels
+{
+    width: 100px;
+    float: left;
+    font-size: 13px;
+    margin-left: 60px
+}
+
+.rateMenu .simpleLink
+{
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 23px;
+    padding: 0;
+    text-decoration: none;
+}
+
+.tryRadControlsForAspNetAjax
+{
+	background: #C3E4B7 url('../Img/qsfFreeTryRadControls.gif') no-repeat 20px 15px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+    margin:0 0 20px 30px;
+    display:block;
+    clear:both;
+    text-decoration:none;
+    font:normal 14px "Myriad Pro", Arial, Verdana;
+}
+
+.tryRadControlsForAspNetAjax strong
+{
+    font-size:18px;
+}
+
+.tryRadControlsForAspNetAjax em
+{
+    font:normal italic 18px "Minion Pro", Arial, Verdana;
+}
+
+.tryRadControlsForAspNetAjax span
+{
+    display:block;
+    height:77px;
+    line-height:77px;
+    margin-left:91px;
+    cursor:pointer;
+    cursor:hand;
+    color:#000;
+    
+}
+
+/* Overview pages styles */
+.qsfOverviewTitle
+{
+	margin: 0;
+	padding: 0;
+	font: 36px "Segoe UI", Arial, sans-serif;
+
+}
+
+.qsfOverviewTitle .qsfTitleRad
+{
+	color: #000;
+}
+
+.qsfOverviewTitle .qsfTitleControl
+{
+	color: #73af20;
+}
+
+.qsfOverviewTitle .qsfTitleAsp
+{
+	display: block;
+	font-size: 11px;
+	font-weight: 400;
+	color: #000;
+	text-transform: uppercase;
+	padding: 0 0 0 2px;
+}
+
+.qsfBgHolderRightCont p
+{
+	color: #555;
+	line-height: 16px;
+	width: 360px
+}
+
+.qsfBgHolderRightCont .qsfPurchaseOptions
+{
+	color: #bbb;
+}
+
+.qsfBgHolderRightCont p a,
+.qsfBgHolderRightCont .qsfPurchaseOptions a
+{
+	color: #418b04;
+}
+
+.qsfBgHolderRightCont p a:hover,
+.qsfBgHolderRightCont .qsfPurchaseOptions a:hover
+{
+	text-decoration: none;
+}
+
+.qsfBgHolderRightCont .qsfPurchaseOptions .dlTrial,
+.qsfBgHolderRightCont .qsfPurchaseOptions .buyNow
+{
+	height: 26px;
+	font: bold 10px/26px arial,sans-serif;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-repeat: no-repeat;
+	display: inline-block;
+	zoom: 1; /* IE hack to trigger hasLayout */
+	*display: inline; /* IE hack to achieve inline-block behavior */
+}
+
+.qsfBgHolderRightCont .qsfPurchaseOptions .dlTrial:hover,
+.qsfBgHolderRightCont .qsfPurchaseOptions .buyNow:hover
+{
+	color: #b8f663;
+}
+
+.qsfBgHolderRightCont .qsfPurchaseOptions .dlTrial
+{
+	width: 155px;
+	background-position: -976px -93px;
+}
+
+.qsfBgHolderRightCont .qsfPurchaseOptions .buyNow
+{
+	width: 73px;
+	background-position: -1131px -93px;
+}
+
+
+.qsfOverviewThumbs
+{
+	margin: 0;
+	padding: 0 60px 37px;
+	background-color: #fff;
+	list-style: none;
+	clear: both;
+}
+
+.qsfOverviewThumbs li
+{
+	margin: 0 20px 0 0;
+	display: inline-block;
+	zoom: 1; /* IE hack to trigger hasLayout */
+	*display: inline; /* IE hack to achieve inline-block behavior */
+	width: 187px;
+	vertical-align: top;
+}
+
+.qsfOverviewThumbs li.qsfNoBrd
+{
+	margin-right: 0;
+}
+
+.qsfOverviewThumbs li .qsfThumb
+{
+	display: block;
+	width: 188px;
+	border: 1px solid #bbb;
+}
+
+.qsfOverviewThumbs li .qsfThumb:hover
+{
+	border: 1px solid #666;
+}
+
+
+.qsfOverviewThumbs li h2
+{
+	margin: 0;
+	padding: 11px 0 5px;
+	text-transform: capitalize;
+}
+
+/*IE7 fix*/
+*+html .qsfOverviewThumbs li h2
+{
+	padding: 1px 0 14px;
+}
+/*IE6 fix*/
+*html .qsfOverviewThumbs li h2
+{
+	padding: 1px 0 14px;
+}
+
+.qsfOverviewThumbs li h2 a
+{
+	text-decoration: none;
+	font-size: 15px;
+	color: #232323;
+	font-weight: normal;
+}
+
+.qsfOverviewThumbs li h2 a:hover
+{
+	color: #666;
+}
+
+.qsfOverviewThumbs li span
+{
+	display: block;
+	padding: 0 0 3px;
+	color: #555;
+}

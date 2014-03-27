@@ -1,0 +1,107 @@
+﻿body, h1, h2, h3, h4, pre {
+    background: none repeat scroll 0 0 aliceblue;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: dodgerblue;
+}
+br {
+    line-height: 1.4em;
+}
+pre {
+    background-color: royalblue;
+    border: 2px solid salmon;
+    color: white;
+    padding: 6px;
+}
+#content {
+    font-family: "Trebuchet MS",Tahoma,Arial,sans-serif;
+    padding: 10px;
+}
+#content p {
+    margin: 0;
+    padding: 0;
+}
+#credits {
+    background-color: ghostwhite;
+    border: 1px solid gray;
+    color: darkslategray;
+    font-size: 0.7em;
+    font-style: italic;
+    line-height: 1.3em;
+    padding: 6px;
+    width: 600px;
+}
+#credits h4 {
+    font-size: 1.3em;
+}
+#date {
+    display: inline;
+    float: right;
+}
+#dummiesbook {
+    background: none repeat scroll 0 0 lightsteelblue;
+    border: 4px solid yellow;
+    color: darkblue;
+    font-size: 1.15em;
+    margin: 24px 0;
+    padding: 12px 6px;
+}
+#info li {
+    font-size: 0.8em;
+}
+#music p {
+    background-color: #FFFFFF;
+    border: 1px solid dodgerblue;
+    color: darkslategray;
+    padding: 6px;
+}
+#twitter p {
+    background-image: url("/images/twitter-t.png");
+}
+h1 {
+    background: none repeat scroll 0 0 firebrick;
+    color: #FFFFFF;
+    font-family: "Trebuchet MS",Tahoma,Arial,sans-serif;
+    font-size: 150%;
+    margin-bottom: 12px;
+    padding: 10px;
+}
+h1 a {
+    border-bottom: 1px dotted lightblue;
+    color: lightblue;
+    text-decoration: none;
+}
+h2 {
+    border-bottom: 1px dashed firebrick;
+    color: firebrick;
+    margin-bottom: 8px;
+}
+h4 {
+    color: firebrick;
+}
+.byline {
+    color: gray;
+    font-size: 0.7em;
+    font-style: italic;
+    text-align: right;
+}
+.email {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+.mp3 {
+    color: firebrick;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 0.9em;
+}
+.red {
+    color: red;
+}
+table {
+    border: 1px solid mediumslateblue;
+    display: inline;
+    float: right;
+    width: 130px;
+}

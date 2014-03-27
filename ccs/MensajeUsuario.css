@@ -1,0 +1,30 @@
+﻿.pnlMensajeUsuario{
+	padding:2px;
+	height:auto;
+	border:1px solid #718bb0;
+	max-width: 350px;
+	background-color: #FFF;
+}
+.contenedorMensajeUsuario{	
+	padding: 10px;
+	margin:0;
+	height:auto;
+	vertical-align: middle;
+}
+.MensajeUsuario-img{
+	padding: 10px;
+	float: left;
+}
+.MensajeUsuario-msg{
+	font: bold 11px Verdana, Geneva, Arial, Helvetica, sans-serif;	
+	color: #444;
+	float: right;
+}
+.botonesModal{
+	text-align: center;
+	padding: 20px;
+}
+.botonMensajeUsuario{
+	width: 50px;
+}
+.modalBackground{background-color:transparent; filter:alpha(opacity=80); opacity:0.7;}

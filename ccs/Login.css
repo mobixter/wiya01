@@ -1,0 +1,73 @@
+﻿a{	
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: Black;
+}
+
+.negrita{	
+	font: bold 11px Verdana, Geneva, Arial, Helvetica, sans-serif !important;
+	color: Black;
+}
+
+body {
+	background-color: #FFFFFF;
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding-top: 50px;
+}
+
+td{
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+input{
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border: 1px solid #000000;
+	background-color: #FFFFFF;
+}
+
+.lblError{
+	font: bold 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border: 1px solid #FF0000;
+	background-color: #FFFFFF;
+	color: #FF0000;	
+	padding: 5px;
+	text-align: center;
+	display: block;
+}
+
+.pleaseWait{
+	font: bold 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border: 1px solid #000000;
+	background-color: #FFFFFF;
+	color: #000000;	
+	width: 160px;
+	padding: 5px;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 150px;
+}
+
+.resaltarTextBox{
+	background-color: lemonchiffon;
+}
+
+.contenedorTablaLogin{
+	padding: 10px 20px;
+    margin-top: 20px;
+    width: 500px;
+	background-color: #EDEDED;
+	border: 1px solid #000000;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color='#666666', Direction=135, Strength=7);
+	position: relative;
+	top: 180px;
+    left: -1px;
+}
+.imgLogo{
+	margin-top: 200px;
+	position: relative;
+	top: -133px;
+	float:left;
+    left: 395px;
+    height: 131px;
+    width: 255px;
+}

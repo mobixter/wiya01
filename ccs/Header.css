@@ -1,0 +1,69 @@
+﻿.TituloMensaje{
+	font: bold 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	width: 100%;
+	height: 20px;
+	vertical-align: middle;
+	overflow: hidden;	
+	line-height: 20px;
+}
+.textoseleccionado{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FF0000;
+}
+.TituloSeccion{
+	font: bold 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;	
+	width: 100%;
+	height: 20px;
+	vertical-align: middle;
+	overflow: hidden;
+	line-height: 20px;
+}
+.BarraHeaderMenu{
+	background-color: #304259;
+	height: 20px;
+	width: auto;	
+	border-top: 1px solid #abc1ea;
+	border-bottom: 1px solid #103873;
+	border-left: 1px solid #aac0e9;
+}
+
+
+html, body {
+	
+}
+#nota			{background: #FFFFCC url(Image/warning.png) no-repeat; border: solid 1px #CCCCCC; font-style: italic; margin-bottom: 10px; margin-top: 10px; padding: 3px 3px 3px 44px; height: 42px; width: 700px}
+
+.LabelRequerido{
+	font-size: 9px;
+	color: red;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.texto {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+
+.EditFormHeader
+{
+	background-color: #ced9c1;
+	color: #475c2c;
+	height: 18px;
+}
+
+
+
+.module button
+{
+	margin-bottom: 5px;
+}
+.EditFormButtonRow A { FONT-SIZE: 12px; COLOR: darkgreen }
+
+.boton{
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border: 1px solid #000000;
+	background-color: #FFFFFF;
+}

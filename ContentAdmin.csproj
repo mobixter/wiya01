@@ -1,0 +1,717 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E778EDCD-A773-4F34-A5BE-C3A3894FBCAD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ContentAdmin</RootNamespace>
+    <AssemblyName>ContentAdmin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DbAcces.Data">
+      <HintPath>..\..\Libs\DbAcces.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MediaHandlerPro">
+      <HintPath>..\..\Libs\MediaHandlerPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Utils">
+      <HintPath>..\..\Libs\System.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Web.UI, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\RadControls for ASP.NET AJAX Q1 2013\Bin40\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\RadControls for ASP.NET AJAX Q1 2013\Bin40\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="ZipForge">
+      <HintPath>..\..\Libs\ZipForge.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\Errores.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Errores.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\NewResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resource.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="C#_Code\Archivo.cs" />
+    <Compile Include="C#_Code\Artista.cs" />
+    <Compile Include="C#_Code\Base.cs" />
+    <Compile Include="C#_Code\Bitacora.cs" />
+    <Compile Include="C#_Code\Categoria.cs" />
+    <Compile Include="C#_Code\CDevices.cs" />
+    <Compile Include="C#_Code\Charge.cs" />
+    <Compile Include="C#_Code\Configuracion.cs" />
+    <Compile Include="C#_Code\Converter.cs" />
+    <Compile Include="C#_Code\CryptoEngine.cs" />
+    <Compile Include="C#_Code\Encoder.cs" />
+    <Compile Include="C#_Code\Entidad.cs" />
+    <Compile Include="C#_Code\Envio.cs" />
+    <Compile Include="C#_Code\Fabricante.cs" />
+    <Compile Include="C#_Code\FilteringColumn.cs" />
+    <Compile Include="C#_Code\Funciones.cs" />
+    <Compile Include="C#_Code\Handset.cs" />
+    <Compile Include="C#_Code\HandsetGorup.cs" />
+    <Compile Include="C#_Code\Idioma.cs" />
+    <Compile Include="C#_Code\interface .cs" />
+    <Compile Include="C#_Code\Item.cs" />
+    <Compile Include="C#_Code\ItemCategoria.cs" />
+    <Compile Include="C#_Code\ItemHandset.cs" />
+    <Compile Include="C#_Code\ItemPlataforma.cs" />
+    <Compile Include="C#_Code\ItemPlataformaSend.cs" />
+    <Compile Include="C#_Code\ItemPlatformInternal.cs" />
+    <Compile Include="C#_Code\ItemPreview.cs" />
+    <Compile Include="C#_Code\ListControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="C#_Code\Menu.cs" />
+    <Compile Include="C#_Code\MimeType.cs" />
+    <Compile Include="C#_Code\OperacionRol.cs" />
+    <Compile Include="C#_Code\Pais.cs" />
+    <Compile Include="C#_Code\Plataforma.cs" />
+    <Compile Include="C#_Code\Preview.cs" />
+    <Compile Include="C#_Code\PrintItem.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="C#_Code\Proveedor.cs" />
+    <Compile Include="C#_Code\Resumen.cs" />
+    <Compile Include="C#_Code\Rol.cs" />
+    <Compile Include="C#_Code\SubCategoria.cs" />
+    <Compile Include="C#_Code\Telefono.cs" />
+    <Compile Include="C#_Code\Tematico.cs" />
+    <Compile Include="C#_Code\TipoItem.cs" />
+    <Compile Include="C#_Code\TipoNivel.cs" />
+    <Compile Include="C#_Code\ChargeType.cs" />
+    <Compile Include="C#_Code\Usuario.cs" />
+    <Compile Include="C#_Code\UsuarioPais.cs" />
+    <Compile Include="C#_Code\VideoFile.cs" />
+    <Compile Include="C#_Code\XmlSchemaSetValidador.cs" />
+    <Compile Include="C#_Code\XmlProvider.cs" />
+    <Compile Include="Controls\ctrHeader.ascx.cs">
+      <DependentUpon>ctrHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrHeader.ascx.designer.cs">
+      <DependentUpon>ctrHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Forms\ctrArtista.ascx.cs">
+      <DependentUpon>ctrArtista.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\ctrArtista.ascx.designer.cs">
+      <DependentUpon>ctrArtista.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Forms\ctrCategoria.ascx.cs">
+      <DependentUpon>ctrCategoria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\ctrCategoria.ascx.designer.cs">
+      <DependentUpon>ctrCategoria.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Forms\ctrCompatibles.ascx.cs">
+      <DependentUpon>ctrCompatibles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\ctrCompatibles.ascx.designer.cs">
+      <DependentUpon>ctrCompatibles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Forms\ctrGroups.ascx.cs">
+      <DependentUpon>ctrGroups.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\ctrGroups.ascx.designer.cs">
+      <DependentUpon>ctrGroups.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Forms\ctrItem.ascx.cs">
+      <DependentUpon>ctrItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\ctrItem.ascx.designer.cs">
+      <DependentUpon>ctrItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Forms\ctrItemHandset.ascx.cs">
+      <DependentUpon>ctrItemHandset.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\ctrItemHandset.ascx.designer.cs">
+      <DependentUpon>ctrItemHandset.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Forms\ctrPlataforma.ascx.cs">
+      <DependentUpon>ctrPlataforma.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\ctrPlataforma.ascx.designer.cs">
+      <DependentUpon>ctrPlataforma.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Forms\ctrProveedor.ascx.cs">
+      <DependentUpon>ctrProveedor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\ctrProveedor.ascx.designer.cs">
+      <DependentUpon>ctrProveedor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\elimhandset.aspx.cs">
+      <DependentUpon>elimhandset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\elimhandset.aspx.designer.cs">
+      <DependentUpon>elimhandset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageArtista.aspx.cs">
+      <DependentUpon>PageArtista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PageArtista.aspx.designer.cs">
+      <DependentUpon>PageArtista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageBulkContent.aspx.cs">
+      <DependentUpon>PageBulkContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PageBulkContent.aspx.designer.cs">
+      <DependentUpon>PageBulkContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageCategoria.aspx.cs">
+      <DependentUpon>PageCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PageCategoria.aspx.designer.cs">
+      <DependentUpon>PageCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageCharge.aspx.cs">
+      <DependentUpon>PageCharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PageCharge.aspx.designer.cs">
+      <DependentUpon>PageCharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageChargeType.aspx.cs">
+      <DependentUpon>PageChargeType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PageChargeType.aspx.designer.cs">
+      <DependentUpon>PageChargeType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageComercializacion.aspx.cs">
+      <DependentUpon>PageComercializacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PageComercializacion.aspx.designer.cs">
+      <DependentUpon>PageComercializacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageDevices.aspx.cs">
+      <DependentUpon>PageDevices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PageDevices.aspx.designer.cs">
+      <DependentUpon>PageDevices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageDownloadZip.aspx.cs">
+      <DependentUpon>PageDownloadZip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PageDownloadZip.aspx.designer.cs">
+      <DependentUpon>PageDownloadZip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageFabricante.aspx.cs">
+      <DependentUpon>PageFabricante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PageFabricante.aspx.designer.cs">
+      <DependentUpon>PageFabricante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageGroups.aspx.cs">
+      <DependentUpon>PageGroups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PageGroups.aspx.designer.cs">
+      <DependentUpon>PageGroups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageItem.aspx.cs">
+      <DependentUpon>PageItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PageItem.aspx.designer.cs">
+      <DependentUpon>PageItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageItemHandset.aspx.cs">
+      <DependentUpon>PageItemHandset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PageItemHandset.aspx.designer.cs">
+      <DependentUpon>PageItemHandset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageItemHandset1.aspx.cs">
+      <DependentUpon>PageItemHandset1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PageItemHandset1.aspx.designer.cs">
+      <DependentUpon>PageItemHandset1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PagePlaformaFormatos.aspx.cs">
+      <DependentUpon>PagePlaformaFormatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PagePlaformaFormatos.aspx.designer.cs">
+      <DependentUpon>PagePlaformaFormatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PagePlataforma.aspx.cs">
+      <DependentUpon>PagePlataforma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PagePlataforma.aspx.designer.cs">
+      <DependentUpon>PagePlataforma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageProveedor.aspx.cs">
+      <DependentUpon>PageProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PageProveedor.aspx.designer.cs">
+      <DependentUpon>PageProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageTelefono.aspx.cs">
+      <DependentUpon>PageTelefono.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PageTelefono.aspx.designer.cs">
+      <DependentUpon>PageTelefono.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageTipoItem.aspx.cs">
+      <DependentUpon>PageTipoItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PageTipoItem.aspx.designer.cs">
+      <DependentUpon>PageTipoItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Header.aspx.cs">
+      <DependentUpon>Header.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Header.aspx.designer.cs">
+      <DependentUpon>Header.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOff.aspx.cs">
+      <DependentUpon>LogOff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOff.aspx.designer.cs">
+      <DependentUpon>LogOff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickStart\ConfiguratorPanel.cs" />
+    <Compile Include="QuickStart\EventLogConsole.cs" />
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm6.aspx.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm6.aspx.designer.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="ffmpeg\bin\" />
+    <Folder Include="File\Bulk\" />
+    <Folder Include="File\Master\Animations\" />
+    <Folder Include="File\Master\Applications\" />
+    <Folder Include="File\Master\FullTracks\" />
+    <Folder Include="File\Master\PolyTones\" />
+    <Folder Include="File\Master\RealTones\" />
+    <Folder Include="File\Master\Themes\" />
+    <Folder Include="File\Master\Video\" />
+    <Folder Include="File\Master\Wallpapers\" />
+    <Folder Include="File\Preview\" />
+    <Folder Include="File\Respaldo\" />
+    <Folder Include="File\Thumbnail\" />
+    <Folder Include="File\Zip\Animations\" />
+    <Folder Include="File\Zip\Applications\" />
+    <Folder Include="File\Zip\FullTracks\" />
+    <Folder Include="File\Zip\PolyTones\" />
+    <Folder Include="File\Zip\RealTones\" />
+    <Folder Include="File\Zip\Temp\" />
+    <Folder Include="File\Zip\Themes\" />
+    <Folder Include="File\Zip\Video\" />
+    <Folder Include="File\Zip\Wallpapers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Errores.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Errores.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Resource.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ccs\css\prettyPhoto.css" />
+    <Content Include="ccs\Header.css" />
+    <Content Include="ccs\Login.css" />
+    <Content Include="ccs\Main.css" />
+    <Content Include="ccs\MensajeUsuario.css" />
+    <Content Include="ccs\Menu.css" />
+    <Content Include="ccs\qsf.css" />
+    <Content Include="Controls\ctrHeader.ascx" />
+    <Content Include="Controls\Forms\ctrArtista.ascx" />
+    <Content Include="Controls\Forms\ctrCategoria.ascx" />
+    <Content Include="Controls\Forms\ctrCompatibles.ascx" />
+    <Content Include="Controls\Forms\ctrGroups.ascx" />
+    <Content Include="Controls\Forms\ctrItem.ascx" />
+    <Content Include="Controls\Forms\ctrItemHandset.ascx" />
+    <Content Include="Controls\Forms\ctrPlataforma.ascx" />
+    <Content Include="Controls\Forms\ctrProveedor.ascx" />
+    <Content Include="ffmpeg\avcodec-51.dll" />
+    <Content Include="ffmpeg\avdevice-52.dll" />
+    <Content Include="ffmpeg\avformat-51.dll" />
+    <Content Include="ffmpeg\avformat-52.dll" />
+    <Content Include="ffmpeg\avutil-49.dll" />
+    <Content Include="ffmpeg\doc\faq.html" />
+    <Content Include="ffmpeg\doc\ffmpeg-doc.html" />
+    <Content Include="ffmpeg\doc\ffplay-doc.html" />
+    <Content Include="ffmpeg\ffmpeg.exe" />
+    <Content Include="ffmpeg\ffplay.exe" />
+    <Content Include="ffmpeg\GPL.txt" />
+    <Content Include="ffmpeg\imlib2\filters\bumpmap.dll" />
+    <Content Include="ffmpeg\imlib2\filters\colormod.dll" />
+    <Content Include="ffmpeg\imlib2\filters\testfilter.dll" />
+    <Content Include="ffmpeg\imlib2\loaders\argb.dll" />
+    <Content Include="ffmpeg\imlib2\loaders\bmp.dll" />
+    <Content Include="ffmpeg\imlib2\loaders\jpeg.dll" />
+    <Content Include="ffmpeg\imlib2\loaders\lbm.dll" />
+    <Content Include="ffmpeg\imlib2\loaders\png.dll" />
+    <Content Include="ffmpeg\imlib2\loaders\pnm.dll" />
+    <Content Include="ffmpeg\imlib2\loaders\tiff.dll" />
+    <Content Include="ffmpeg\imlib2\loaders\xpm.dll" />
+    <Content Include="ffmpeg\libfreetype-6.dll" />
+    <Content Include="ffmpeg\libImlib2-1.dll" />
+    <Content Include="ffmpeg\libpng-3.dll" />
+    <Content Include="ffmpeg\libtiff-3.dll" />
+    <Content Include="ffmpeg\libungif-4.dll" />
+    <Content Include="ffmpeg\pthreadGC2.dll" />
+    <Content Include="ffmpeg\README.txt" />
+    <Content Include="ffmpeg\SDL.dll" />
+    <Content Include="ffmpeg\swscale-0.dll" />
+    <Content Include="ffmpeg\vhook\drawtext.c" />
+    <Content Include="ffmpeg\vhook\drawtext.dll" />
+    <Content Include="ffmpeg\vhook\fish.c" />
+    <Content Include="ffmpeg\vhook\fish.dll" />
+    <Content Include="ffmpeg\vhook\imlib2.c" />
+    <Content Include="ffmpeg\vhook\imlib2.dll" />
+    <Content Include="ffmpeg\vhook\null.c" />
+    <Content Include="ffmpeg\vhook\null.dll" />
+    <Content Include="ffmpeg\vhook\ppm.c" />
+    <Content Include="ffmpeg\vhook\watermark.c" />
+    <Content Include="ffmpeg\vhook\watermark.dll" />
+    <Content Include="Forms\elimhandset.aspx" />
+    <Content Include="Forms\PageArtista.aspx" />
+    <Content Include="Forms\PageBulkContent.aspx" />
+    <Content Include="Forms\PageCategoria.aspx" />
+    <Content Include="Forms\PageCharge.aspx" />
+    <Content Include="Forms\PageChargeType.aspx" />
+    <Content Include="Forms\PageComercializacion.aspx" />
+    <Content Include="Forms\PageDevices.aspx" />
+    <Content Include="Forms\PageDownloadZip.aspx" />
+    <Content Include="Forms\PageFabricante.aspx" />
+    <Content Include="Forms\PageGroups.aspx" />
+    <Content Include="Forms\PageItem.aspx" />
+    <Content Include="Forms\PageItemHandset.aspx" />
+    <Content Include="Forms\PageItemHandset1.aspx" />
+    <Content Include="Forms\PagePlaformaFormatos.aspx" />
+    <Content Include="Forms\PagePlataforma.aspx" />
+    <Content Include="Forms\PageProveedor.aspx" />
+    <Content Include="Forms\PageTelefono.aspx" />
+    <Content Include="Forms\PageTipoItem.aspx" />
+    <Content Include="Handset.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Header.aspx" />
+    <Content Include="Images\AddRecord.gif" />
+    <Content Include="Images\images\fullscreen\1.jpg" />
+    <Content Include="Images\images\fullscreen\2.jpg" />
+    <Content Include="Images\images\fullscreen\3.jpg" />
+    <Content Include="Images\images\fullscreen\4.jpg" />
+    <Content Include="Images\images\fullscreen\5.jpg" />
+    <Content Include="Images\images\fullscreen\6.jpg" />
+    <Content Include="Images\images\fullscreen\high.gif" />
+    <Content Include="Images\images\fullscreen\huge.gif" />
+    <Content Include="Images\images\fullscreen\wide.gif" />
+    <Content Include="Images\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="Images\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="Images\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="Images\images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="Images\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="Images\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="Images\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="Images\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="Images\images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="Images\images\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="Images\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="Images\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="Images\images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="Images\images\prettyPhoto\default\loader.gif" />
+    <Content Include="Images\images\prettyPhoto\default\sprite.png" />
+    <Content Include="Images\images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="Images\images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="Images\images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="Images\images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="Images\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="Images\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="Images\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="Images\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="Images\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="Images\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="Images\images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="Images\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="Images\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="Images\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="Images\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="Images\images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="Images\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="Images\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="Images\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="Images\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="Images\images\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="Images\images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="Images\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="Images\images\thumbnails\flash-logo.png" />
+    <Content Include="Images\images\thumbnails\quicktime-logo.gif" />
+    <Content Include="Images\images\thumbnails\t_1.jpg" />
+    <Content Include="Images\images\thumbnails\t_2.jpg" />
+    <Content Include="Images\images\thumbnails\t_3.jpg" />
+    <Content Include="Images\images\thumbnails\t_4.jpg" />
+    <Content Include="Images\images\thumbnails\t_5.jpg" />
+    <Content Include="Images\line.png" />
+    <Content Include="Images\LoadingIcon.gif" />
+    <Content Include="Images\logo.gif" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\pixel.gif" />
+    <Content Include="Images\qsfConsoleClear.png" />
+    <Content Include="Images\qsfConsoleInfo.png" />
+    <Content Include="Images\Refresh.gif" />
+    <Content Include="Images\titulo.jpg" />
+    <Content Include="Images\wait.gif" />
+    <Content Include="Index.aspx" />
+    <Content Include="index.html" />
+    <Content Include="Scripts\js\jquery.jmp3.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="LogOff.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="Menu.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\js\jquery-1.3.2.min.js" />
+    <Content Include="Scripts\js\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\js\jquery-1.6.1.min.js" />
+    <Content Include="Scripts\js\jquery.prettyPhoto.js" />
+    <Content Include="Scripts\Menu.js" />
+    <Content Include="Scripts\qsf.js" />
+    <Content Include="ccs\css\StyleSheet1.css" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
+    <Content Include="WebForm4.aspx" />
+    <Content Include="WebForm6.aspx" />
+    <Content Include="XMLFile1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFile10.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFile2.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFile3.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFile4.xml" />
+    <Content Include="XMLFile5.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFile6.xml" />
+    <Content Include="XMLFile7.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFile8.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFile9.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Login.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\NewResource.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>NewResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ffmpeg\doc\vssver2.scc" />
+    <None Include="ffmpeg\imlib2\filters\vssver2.scc" />
+    <None Include="ffmpeg\imlib2\loaders\vssver2.scc" />
+    <None Include="ffmpeg\Thumbs.db" />
+    <None Include="ffmpeg\vhook\Makefile" />
+    <None Include="ffmpeg\vhook\vssver2.scc" />
+    <None Include="ffmpeg\vssver2.scc" />
+    <None Include="Images\images\.DS_Store" />
+    <None Include="Images\images\fullscreen\.DS_Store" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2915</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/ContentAdmin</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties UseJQuerySupport="False" UseAjaxifiedTemplates="False" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

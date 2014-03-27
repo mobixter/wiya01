@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="txtActivarCompra" xml:space="preserve">
+    <value>Activar compra</value>
+  </data>
+  <data name="txtAgregar" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="txtAplicacion" xml:space="preserve">
+    <value>Sistema administración de Contenido </value>
+  </data>
+  <data name="txtAprobar" xml:space="preserve">
+    <value>Aprobar Contenido</value>
+  </data>
+  <data name="txtAsociarBanner" xml:space="preserve">
+    <value>Banner Categorías</value>
+  </data>
+  <data name="txtAsociarCatalogo" xml:space="preserve">
+    <value>Banner Catalogo</value>
+  </data>
+  <data name="txtAsociarContenido" xml:space="preserve">
+    <value>Asociar contenido</value>
+  </data>
+  <data name="txtAsociarDestacadoCategoria" xml:space="preserve">
+    <value>Asociar Categoria Destacadas</value>
+  </data>
+  <data name="txtAsociarDestacadoItem" xml:space="preserve">
+    <value>Asociar Item Destacados</value>
+  </data>
+  <data name="txtAsociarImportar" xml:space="preserve">
+    <value>Importar a excel</value>
+  </data>
+  <data name="txtBajar" xml:space="preserve">
+    <value>Bajar</value>
+  </data>
+  <data name="txtBienvenido" xml:space="preserve">
+    <value>Bienvenido </value>
+  </data>
+  <data name="txtCampoRequerido" xml:space="preserve">
+    <value>Campo requerido</value>
+  </data>
+  <data name="txtCancelar" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="txtCerrarDetalle" xml:space="preserve">
+    <value>Cerrar detalle</value>
+  </data>
+  <data name="txtEditar" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="txtEliminar" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="txtGuardar" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="txtImagen" xml:space="preserve">
+    <value>Imágenes</value>
+  </data>
+  <data name="txtMensajeEliminar" xml:space="preserve">
+    <value>¿Esta seguro de eliminar el registro?</value>
+  </data>
+  <data name="txtModificar" xml:space="preserve">
+    <value>Modificar</value>
+  </data>
+  <data name="txtModuloArista" xml:space="preserve">
+    <value>Modulo Control de Artistas</value>
+  </data>
+  <data name="txtModuloATC" xml:space="preserve">
+    <value>Reclamos</value>
+  </data>
+  <data name="txtModuloBanner" xml:space="preserve">
+    <value>Módulo Control de Banners</value>
+  </data>
+  <data name="txtModuloBannerImagen" xml:space="preserve">
+    <value>Módulo Banner Imagen</value>
+  </data>
+  <data name="txtModuloImagenBanner" xml:space="preserve">
+    <value>Módulo Imagen del Banner</value>
+  </data>
+  <data name="txtModuloCargaBanners" xml:space="preserve">
+    <value>Módulo para la carga de Banners</value>
+  </data>
+  <data name="txtModuloCargaImagen" xml:space="preserve">
+    <value>Módulo para la Carga de Imagen</value>
+  </data>
+  <data name="txtModuloCargaXml" xml:space="preserve">
+    <value>Módulo para la carga de Contenido - Integración de Terceros</value>
+  </data>
+  <data name="txtModuloCatalogo" xml:space="preserve">
+    <value>Módulo Control de Catalogos</value>
+  </data>
+  <data name="txtModuloCategoria" xml:space="preserve">
+    <value>Módulo Control de Categorías</value>
+  </data>
+  <data name="txtModuloContenidoPropuesto" xml:space="preserve">
+    <value>Módulo Control Contenido Propuesto</value>
+  </data>
+  <data name="txtModuloItem" xml:space="preserve">
+    <value>Módulo Control Items aprobados - publicados</value>
+  </data>
+  <data name="txtModuloOperadora" xml:space="preserve">
+    <value>Módulo Control de Operadoras</value>
+  </data>
+  <data name="txtModuloProveedor" xml:space="preserve">
+    <value>Módulo Control de Proveedores</value>
+  </data>
+  <data name="txtModuloTasacion" xml:space="preserve">
+    <value>Módulo Control de Tasaciones</value>
+  </data>
+  <data name="txtModuloTelefono" xml:space="preserve">
+    <value>Módulo Consulta Modelos de Teléfonos</value>
+  </data>
+  <data name="txtModuloTipoCatalogo" xml:space="preserve">
+    <value>Módulo Control Tipos de Catálogos</value>
+  </data>
+  <data name="txtNombre" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="txtPublicar" xml:space="preserve">
+    <value>Publicar / Despublicar</value>
+  </data>
+  <data name="txtRefrescar" xml:space="preserve">
+    <value>Refrescar</value>
+  </data>
+  <data name="txtSubir" xml:space="preserve">
+    <value>Subir</value>
+  </data>
+  <data name="txtTituloArtista" xml:space="preserve">
+    <value>Actualizar Artista: {0}</value>
+  </data>
+  <data name="txtTituloCatalogo" xml:space="preserve">
+    <value>Actualizar Catalogo: {0}</value>
+  </data>
+  <data name="txtTituloCategoria" xml:space="preserve">
+    <value>Actualizar Categoría: {0}</value>
+  </data>
+  <data name="txtTituloItemPropuesto" xml:space="preserve">
+    <value>Actualizar Item propuesto: {0}</value>
+  </data>
+  <data name="txtTituloOperadora" xml:space="preserve">
+    <value>Actualizar Operadora: {0}</value>
+  </data>
+  <data name="txtTituloProveedor" xml:space="preserve">
+    <value>Actualizar Proveedor: {0}</value>
+  </data>
+  <data name="txtTituloTelefono" xml:space="preserve">
+    <value>Actualizar Modelo de Teléfono: {0}</value>
+  </data>
+  <data name="txtTituloTipoCatalogo" xml:space="preserve">
+    <value>Actualizar Tipo Catálogo: {0}</value>
+  </data>
+  <data name="txtUltConexion" xml:space="preserve">
+    <value>Su Ultima conexión fué: </value>
+  </data>
+  <data name="txtVerDetalle" xml:space="preserve">
+    <value>Ver detalle</value>
+  </data>
+  <data name="txtWait" xml:space="preserve">
+    <value>Espere por favor...</value>
+  </data>
+  <data name="txtModuloTematico" xml:space="preserve">
+    <value>Módulo Generación de Portales Temáticos</value>
+  </data>
+  <data name="txtModuloCargabullets" xml:space="preserve">
+    <value>Módulo para la Carga de Viñetas</value>
+  </data>
+  <data name="txtModuloSeguridad" xml:space="preserve">
+    <value>Modulo control Seguridad - Usuario</value>
+  </data>
+  <data name="txtDestacados" xml:space="preserve">
+    <value>Destacados</value>
+  </data>
+  <data name="txtTemas" xml:space="preserve">
+    <value>Temas</value>
+  </data>
+  <data name="txtPromociones" xml:space="preserve">
+    <value>Promociones</value>
+  </data>
+  <data name="txtModuloTemas" xml:space="preserve">
+    <value>Módulo de Generación de Portales Temáticos: Temas</value>
+  </data>
+  <data name="txtModuloPortalDestacado" xml:space="preserve">
+    <value>Módulo Generación de Portales Temáticos: Destacados</value>
+  </data>
+  <data name="txtAsociarDestacado" xml:space="preserve">
+    <value>Asociar Destacados</value>
+  </data>
+  <data name="txtModuloCategorizacion" xml:space="preserve">
+    <value>Categorización de Contenido</value>
+  </data>
+  <data name="txtModuloMedio" xml:space="preserve">
+    <value>Módulo Control de Medios</value>
+  </data>
+  <data name="txtModuloWapDeck" xml:space="preserve">
+    <value>Módulo Administración de Wap Decks</value>
+  </data>
+  <data name="txtDiagrama" xml:space="preserve">
+    <value>Árbol de Navegación</value>
+  </data>
+  <data name="txtPropiedades" xml:space="preserve">
+    <value>Propiedades</value>
+  </data>
+  <data name="txtPropiedadesControl" xml:space="preserve">
+    <value>&amp;nbsp;Propiedades de:&amp;nbsp;</value>
+  </data>
+  <data name="txtActualizar" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="txtAcciones" xml:space="preserve">
+    <value>Acciones:&amp;nbsp;</value>
+  </data>
+  <data name="txtModuloCargaFondo" xml:space="preserve">
+    <value>Módulo para la carga de Fondos de Imagen</value>
+  </data>
+  <data name="txtModuloPromocion" xml:space="preserve">
+    <value>Modulo Control de Promociones</value>
+  </data>
+  <data name="txtRenderWap" xml:space="preserve">
+    <value>Render Wap</value>
+  </data>
+  <data name="txtModuloDestacadoWeb" xml:space="preserve">
+    <value>Modulo Control de Descacado Web</value>
+  </data>
+  <data name="txtMensajes" xml:space="preserve">
+    <value>Mensajes</value>
+  </data>
+  <data name="txtModuloRol" xml:space="preserve">
+    <value>Módulo control de Roles </value>
+  </data>
+  <data name="txtModuloUsuario" xml:space="preserve">
+    <value>Módulo control de Usuarios</value>
+  </data>
+  <data name="txtModuloPortalMensaje" xml:space="preserve">
+    <value>Módulo Generación de Mensajes de Sistema</value>
+  </data>
+  <data name="txtModuloBannerWeb" xml:space="preserve">
+    <value>Módulo Control de Banners Web</value>
+  </data>
+  <data name="txtModuloImagenBannerWeb" xml:space="preserve">
+    <value>Módulo Control de Imagen por Banners Web</value>
+  </data>
+  <data name="txtModuloCargaBannerWeb" xml:space="preserve">
+    <value>Módulo para la carga de Banner Web</value>
+  </data>
+  <data name="txtSugerirDespublicacion" xml:space="preserve">
+    <value>Sugerir Despublicación</value>
+  </data>
+  <data name="txtModuloControlParental" xml:space="preserve">
+    <value>Módulo Control Parental</value>
+  </data>
+  <data name="txtAgregarListaNegra" xml:space="preserve">
+    <value>Agregar a la lista negra</value>
+  </data>
+  <data name="txtModuloPruebaTecnica" xml:space="preserve">
+    <value>Módulo Control Pruebas Técnicas Items</value>
+  </data>
+  <data name="txtDesaprobar" xml:space="preserve">
+    <value>Desaprobar Contenido</value>
+  </data>
+  <data name="txtAprobarDesaprobar" xml:space="preserve">
+    <value>Aprobar/Desaprobar Contenido</value>
+  </data>
+  <data name="txtConfiguracion" xml:space="preserve">
+    <value>Configuración</value>
+  </data>
+  <data name="txtModuloPortalTematicoWeb" xml:space="preserve">
+    <value>Módulo para el control de portales temáticos web</value>
+  </data>
+  <data name="txtAsociarBanners" xml:space="preserve">
+    <value>Asociar Banners</value>
+  </data>
+  <data name="txtModuloBannerWap" xml:space="preserve">
+    <value>Banner Wap</value>
+  </data>
+  <data name="txtModuloConfiguracion" xml:space="preserve">
+    <value>Control y configuración de portales</value>
+  </data>
+  <data name="txtModuloPortalTasacion" xml:space="preserve">
+    <value>Control y configuración de Tasaciones para portales wap </value>
+  </data>
+  <data name="txtTasacion" xml:space="preserve">
+    <value>Tasación</value>
+  </data>
+  <data name="txtReportePorting" xml:space="preserve">
+    <value>Reporte Porting</value>
+  </data>
+  <data name="txtGenerarReporte" xml:space="preserve">
+    <value>Generar reporte</value>
+  </data>
+  <data name="txtOrdenarCategorias" xml:space="preserve">
+    <value>Ordenar Categorías</value>
+  </data>
+  <data name="txtModuloCrm" xml:space="preserve">
+    <value>CRM</value>
+  </data>
+  <data name="txtModuloReportes" xml:space="preserve">
+    <value>Módulo Reportes</value>
+  </data>
+  <data name="txtArtistName" xml:space="preserve">
+    <value>Name artist</value>
+  </data>
+</root>
